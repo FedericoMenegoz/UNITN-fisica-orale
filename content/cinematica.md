@@ -15,6 +15,7 @@ La frequenza determina determina invece quante oscillazioni vengono fatte al sec
 
 Un punto materiale segue un __moto armonico semplice__ se la sua legge oraria è definita come:
 $$x(t) = A\sin (\omega t + \phi)$$
+
 $A$, $\omega$ e $\phi$ sono quantità costanti e sono rispettivamente l'__ampiezza del moto__, la __pulsazione__ e la __fase iniziale__.
 
 Il moto armonico semplice è un moto rettilineo vario in cui tutte le grandezze cinematiche che lo descrivono, $x(t)$, $v(t)$ e $a(t)$ variano nel tempo.
@@ -22,17 +23,25 @@ Il moto armonico semplice è un moto rettilineo vario in cui tutte le grandezze 
 I valori estremi della funzione $\sin$ sono $1$ e $-1$ quindi il punto si muove in un segmento grande $2A$ con centro nell'origine. Al tempo $t=0$ il punto si trova in: 
 
 $$x(0) = A\sin(\phi)$$ 
+
 Quindi note $A$ e $\phi$ si può determinare la posizione iniziale del punto.
 
-Sappiamo che la funzione seno è periodica con periodo $2\pi$. Quindi se consideriamo due tempi $t$ e $t'=t+T$ sappiamo che per definizione: $$\omega t' + \phi = \omega t + \phi + 2 \pi  $$
-$$\cancel{\omega t} + \omega T +  \cancel\phi =  \cancel{\omega t }+ \cancel \phi + 2 \pi  $$
+Sappiamo che la funzione seno è periodica con periodo $2\pi$. Quindi se consideriamo due tempi $t$ e $t'=t+T$ sappiamo che per definizione: 
+$$\omega t' + \phi = \omega t + \phi + 2 \pi  $$
+
+$$\cancel{\omega t} + \omega T +  \cancel\phi =  \cancel{\omega t }+ \cancel \phi + 2 \pi $$
+
 $$T = \frac {2\pi}\omega$$
+
 La velocità del punto si ottiene derivando $x(t)$: 
+
 $$v(t) = \omega A cos(\omega t + \phi)$$
+
 L'accelerazione si ottiene con un ulteriore derivazione:
+
 $$a(t) = -\omega ^2 A \sin (\omega t + \phi) = -\omega ^2 x(t)$$
 
-<img alt="diagrammi orari moto armonico" src="../imgs/Cinematica-00_ArmonicoGrafiOrari.png">
+<img alt="diagrammi orari moto armonico" src="../imgs/Cinematica-00_ArmonicoGrafiOrari.png" width="300">
 <br>
 Una condizione sufficiente affinché un moto sia armonico è che l'accelerazione del corpo sia proporzionale e di verso opposto allo spostamento rispetto alla posizione di equilibrio, indicando la presenza di una forza di richiamo (o forza restauratrice) che tende a riportare il corpo verso tale posizione.
 
@@ -57,14 +66,14 @@ $$\vec a = \frac {d\vec v}{dt} = \frac{d}{dt}(v\cdot \vec u_T) = \frac{dv}{dt}\v
 >
 > A livello geometrico abbiamo che $\vec u(t)$, $\vec u(t + \Delta t)$ e $d\vec u$ formano un triangolo isoscele, con $\Delta t \rightarrow 0$ si ha che $\theta \rightarrow 0$, con $\theta$ l'angolo al centro di curvatura. 
 >
->Questo significa che gli altri due angoli tendono a $\frac \pi 2$. Possiamo però provarlo matematicamente, considerando che $||\hat u|| = 1$  perché è un versore quindi anche il prodotto scalare $\hat u \cdot \hat u = ||\hat u||^2 = 1$. 
+>Questo significa che gli altri due angoli tendono a $\frac \pi 2$. Possiamo però provarlo matematicamente, considerando che $\lvert \lvert\hat u\rvert\rvert = 1$  perché è un versore quindi anche il prodotto scalare $\hat u \cdot \hat u = \lvert \lvert\hat u\rvert\rvert^2 = 1$. 
 >
 >Quindi la derivata del prodotto scalare del versore con se stesso è costante perciò la sua derivata è zero:
 > $$\frac{d(\hat u \cdot \hat u)}{dt} = 0$$
 > Si applica la regola della derivazione per il prodotto scalare:
 > $$\frac{d(\hat u \cdot \hat u)}{dt} =\frac{d\hat u}{dt} \cdot \hat u + \hat u \cdot \frac{d\hat u}{dt}  = 2 \hat u \cdot \frac{d\hat u}{dt} =0$$
 > Si vede dall'ultima uguaglianza che $\hat u \perp d\hat u$.
-> Per il modulo invece sappiamo che l'arco è uguale al raggio per l'angolo da cui per valori infinitesimi in cui la corda si confonde con l'arco abbiamo che: $$du = ||u(t)|| \cdot d\theta = d\theta $$
+> Per il modulo invece sappiamo che l'arco è uguale al raggio per l'angolo da cui per valori infinitesimi in cui la corda si confonde con l'arco abbiamo che: $$du = \lvert\lvert u(t)\rvert\rvert \cdot d\theta = d\theta $$
 > Infine:$$\frac{d\hat u}{dt} = \frac{d\theta}{dt}\hat u_N$$
 
 

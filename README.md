@@ -1,6 +1,6 @@
 
 # Indice
-1. [[VARIE.html]]
+1. [VARIE](VARIE.html)
 2. [[CINEMATICA]]
 3. [[DINAMICA]]
 4. [[ENERIGIA MECCANICA]]

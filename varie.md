@@ -6,7 +6,8 @@ title: Varie
 # Varie
 ## Radianti
 ## Domande
- 1. Disegna le operazioni vettoriali che abbiamo studiato.
+### Disegna le operazioni vettoriali che abbiamo studiato.
+
 __Prodotto tra un vettore ed uno scalare__
 Il prodotto di uno scalare $m$ (numero) per un vettore $\vec a$ ha come risultato un nuovo vettore avente stessa direzione di $\vec a$ e modulo $|m|$ volte quello di $\vec a$, lo stesso verso di $\vec a$ se $m > 0$, mentre verso opposto se $m<0$. 
 Grazie a questa operazione possiamo esprimere ogni vettore come il prodotto scalare del suo modulo per il vettore unitario $\hat u$ avente modulo 1 e direzione concorde ad $\hat a$. $$\vec a = a\cdot \hat u$$
@@ -24,7 +25,10 @@ Dati due vettori $\vec a$ e $\vec b$ si definisce prodotto scalare la quantità 
 con $\theta$ l'angolo formato dai due vettori. Il risultato del prodotto scalare è uno scalare e gode delle seguenti:
 1. il prodotto scalare è nullo solo se uno dei due vettori è nullo o se l'angolo compreso è $\frac\pi 2$ 
 2. vale la proprietà commutativa $$\vec a \cdot \vec b = ||\vec a || \cdot || \vec b|| \cdot \cos (\theta) = ||\vec b || \cdot || \vec a|| \cdot \cos (-\theta) = \vec b \cdot \vec a$$
-3. $$\vec a\cdot \vec a = || \vec a||\cdot || \vec a||\cdot \cos(0) =  || \vec a||^2$$ ^e9838d
+3. 
+```math
+\vec a\cdot \vec a = || \vec a||\cdot || \vec a||\cdot \cos(0) =  || \vec a||^2
+```
 4. vale la proprietà distributiva
 5. non ha senso iterare il prodotto scalare: $\vec a \cdot \vec b \cdot \vec c$ è priva di senso perché appunto $\vec a \cdot \vec b$ è uno scalare e non può essere moltiplicato scalarmente per $\vec c$
 6. se $\vec c = \vec a + \vec b$ dalla proprietà distributiva e dalla [[FISICA_ORALE#^e9838d|3]] allora $$||\vec c||^2 = (\vec a + \vec b)\cdot(\vec a + \vec b) = ||\vec a ||^2 + ||\vec b ||^2 + 2||\vec a||\, ||\vec b|| \cos \theta$$ se $\vec a \perp \vec b$ allora $$c^2 = a^2 + b^2$$
@@ -41,7 +45,7 @@ Il prodotto vettoriale è _anticommutativo_: $$\vec a \times \vec b = - \vec b \
 Il prodotto vettoriale è nullo se uno dei due vettori è nullo o se i due vettori sono paralleli.
 Il prodotto vettoriale si può iterare, ma non è associativo quindi va specificato l'ordine.
 
-### todo
+#### todo
 - derivata di un vettore
 - integrale ???
 - disegni
@@ -49,12 +53,12 @@ Il prodotto vettoriale si può iterare, ma non è associativo quindi va specific
 
 ---
 
- 2.  Quali sono le forze fondamentali della natura?
+ ### Quali sono le forze fondamentali della natura?
  Le forze fondamentali della natura sono la forza Gravitazionale, la forza Elettromagnetica, la forza Forte e quella Debole
 
 ---
 
- 2. Operazioni tra vettori. Prodotto vettoriale. Prodotto Scalare.
-[risposta precedente](./varie.md#^f9799d)
+ ### Operazioni tra vettori. Prodotto vettoriale. Prodotto Scalare.
+[risposta precedente](#disegna-le-operazioni-vettoriali-che-abbiamo-studiato)
 
 

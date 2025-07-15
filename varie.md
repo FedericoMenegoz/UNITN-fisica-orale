@@ -60,12 +60,12 @@ Il prodotto vettoriale si può iterare, ma non è associativo quindi va specific
 
 ---
 
- ### Quali sono le forze fondamentali della natura?
- Le forze fondamentali della natura sono la forza Gravitazionale, la forza Elettromagnetica, la forza Forte e quella Debole
+### Quali sono le forze fondamentali della natura?
+Le forze fondamentali della natura sono la forza Gravitazionale, la forza Elettromagnetica, la forza Forte e quella Debole
 
 ---
 
- ### Operazioni tra vettori. Prodotto vettoriale. Prodotto Scalare.
+### Operazioni tra vettori. Prodotto vettoriale. Prodotto Scalare.
 [risposta precedente](#disegna-le-operazioni-vettoriali-che-abbiamo-studiato)
 
 

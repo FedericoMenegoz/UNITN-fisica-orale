@@ -29,7 +29,7 @@ con $\theta$ l'angolo formato dai due vettori. Il risultato del prodotto scalare
 1. il prodotto scalare è nullo solo se uno dei due vettori è nullo o se l'angolo compreso è $\frac\pi 2$ 
 2. vale la proprietà commutativa 
 $$\vec a \cdot \vec b = ||\vec a || \cdot || \vec b|| \cdot \cos (\theta) = ||\vec b || \cdot || \vec a|| \cdot \cos (-\theta) = \vec b \cdot \vec a$$
-3. {: #3}
+3. <a id="3"></a>
 $$
 \vec a\cdot \vec a = || \vec a||\cdot || \vec a||\cdot \cos(0) =  || \vec a||^2
 $$

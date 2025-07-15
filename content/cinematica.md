@@ -51,8 +51,14 @@ Per descrivere il moto su una traiettoria curvilinea possiamo utilizzare anche u
 Quindi conoscendo la traiettoria, possiamo descrivere completamente il moto tramite questa ascissa curvilinea. 
 
 L'incremento infinitesimo del raggio vettore $d\vec r$ ha direzione tangente alla curvatura nel punto P e in modulo sarà uguale allo spostamento infinitesimo $ds$ (arco di curva del percorso): $$d\vec r = ds \cdot \vec u_T$$
+
 <a id="velocità-tangente"></a>
-Possiamo pensare quindi al moto come una successione di spostamenti rettilinei infinitesimi con direzione variabile. La velocità quindi avrà stessa direzione e verso di $d\vec r$: $$\vec v= \frac {d \vec r}{dt} = \frac {ds}{dt}\cdot \vec u_T = v \cdot \hat u_T$$
+Possiamo pensare quindi al moto come una successione di spostamenti rettilinei infinitesimi con direzione variabile. 
+
+La velocità quindi avrà stessa direzione e verso di $d\vec r$: 
+
+$$\vec v= \frac {d \vec r}{dt} = \frac {ds}{dt}\cdot \vec u_T = v \cdot \hat u_T$$
+
 Si noti che questo è vero solo a livello infinitesimo, se andiamo a considerare uno spostamento finito avremo che $\Delta \vec r$ rappresenta la corda, mentre $\Delta \vec s$
 rappresenta l'effettiva lunghezza del tratto di curvatura.
 
@@ -141,6 +147,7 @@ $$\alpha = \frac {d \omega}{dt} = \frac 1 R\frac {dv}{dt} = \frac {a_T}R$$
 ---
 ## Moto parabolico
 - TODO
+
 ---
 ## Decomposizione delle accelerazioni nei moti piani.
 

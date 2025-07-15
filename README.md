@@ -1,13 +1,2 @@
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-# Indice
-1. [VARIE](VARIE.html)
-2. [[CINEMATICA]]
-3. [[DINAMICA]]
-4. [[ENERIGIA MECCANICA]]
-5. [[FORZA GRAVITAZIONALE]]
-6. [[URTI]]
-7. [[SISTEMI DI PUNTI MATERIALI]]
-8. [[SISTEMI DI RIFERIMENTO]]
-9. [[TERMODINAMICA]]
+# Test
+[click me](test.html)

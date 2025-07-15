@@ -15,3 +15,6 @@ plugins:
   - jekyll-sitemap
 
 mathjax: true
+
+exclude:
+  - README.md

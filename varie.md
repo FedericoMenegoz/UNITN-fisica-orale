@@ -4,7 +4,6 @@ title: Varie
 ---
 
 # Varie
-## Radianti
 ## Domande
 ### Disegna le operazioni vettoriali che abbiamo studiato.
 
@@ -24,7 +23,10 @@ Nel caso di vettori paralleli si ha: $$\vec a_1 + \vec a_2 = a_1 \hat u + a_2 \h
 Dato un sistema di riferimento è utile _scomporre_ il vettore nelle sue componenti rispetto agli assi, quindi per esempio nel piano $$\vec a = a_x\cdot \hat u_x + a_y\cdot \hat u_y $$
 
 __Prodotto scalare__
-Dati due vettori $\vec a$ e $\vec b$ si definisce prodotto scalare la quantità $$s = \vec a \cdot \vec b = ||\vec a||\cdot ||\vec b|| \cdot \cos \theta$$
+
+Dati due vettori $\vec a$ e $\vec b$ si definisce prodotto scalare la quantità 
+$$s = \vec a \cdot \vec b = ||\vec a||\cdot ||\vec b|| \cdot \cos \theta$$
+
 con $\theta$ l'angolo formato dai due vettori. Il risultato del prodotto scalare è uno scalare e gode delle seguenti:
 1. il prodotto scalare è nullo solo se uno dei due vettori è nullo o se l'angolo compreso è $\frac\pi 2$ 
 2. vale la proprietà commutativa 
@@ -41,6 +43,7 @@ Fare il prodotto scalare tra due vettori scomposti negli assi ricordando che: $$
 Infine un altro modo per visualizzare il prodotto scalare è quello di pensarlo come la moltiplicazione del modulo della proiezione di un vettore sul altro con il modulo del altro vettore.
 
 __Prodotto vettoriale__
+
 Il prodotto vettoriali di due vettori $\vec a$ e $\vec b$ risulta in un vettore $\vec c$ e si indica con $$\vec c = \vec a \times \vec b$$ ed ha le seguenti caratteristiche:
 1. la _direzione_ è ortogonale al piano identificato da $\vec a$ e $\vec b$ 
 2. il _verso_ è definito dalla regola della regola della mano destra 
@@ -66,3 +69,6 @@ Il prodotto vettoriale si può iterare, ma non è associativo quindi va specific
 [risposta precedente](#disegna-le-operazioni-vettoriali-che-abbiamo-studiato)
 
 
+## Extra
+
+## Radianti

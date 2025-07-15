@@ -1,6 +1,6 @@
 # Cinematica
 ## Moti su un piano
-
+todo
 ## Pulsazione e frequenza
 La pulsazione $\omega$ è la velocità con cui viene effettuata un'oscillazione nel moto armonico $$\omega = \frac {2\pi}T$$ con $T$ periodo del moto.
 La frequenza determina determina invece quante oscillazioni vengono fatte al secondo: $$f = \frac 1 T = \frac \omega{2\pi}$$

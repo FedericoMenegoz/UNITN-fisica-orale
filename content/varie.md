@@ -12,7 +12,7 @@ title: Varie
 
 <br>
 
-Il prodotto di uno scalare $m$ (numero) per un vettore $\vec a$ ha come risultato un nuovo vettore avente stessa direzione di $\vec a$ e modulo \\(|m|\\) volte quello di $\vec a$, lo stesso verso di $\vec a$ se $m > 0$, mentre verso opposto se $m<0$. 
+Il prodotto di uno scalare $m$ (numero) per un vettore $\vec a$ ha come risultato un nuovo vettore avente stessa direzione di $\vec a$ e modulo $|m|$ volte quello di $\vec a$, lo stesso verso di $\vec a$ se $m > 0$, mentre verso opposto se $m<0$. 
 
 Grazie a questa operazione possiamo esprimere ogni vettore come il prodotto scalare del suo modulo per il vettore unitario $\hat u$ avente modulo 1 e direzione concorde ad $\hat a$. $$\vec a = a\cdot \hat u$$
 

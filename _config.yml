@@ -1,7 +1,7 @@
 title: UNITN Fisica Orale
 description: Raccolta delle domande dell'orale in ordine tematico per il corso di fisica 1 del Prof. Iuppa.
-baseurl: "UNITN-fisica-orale" 
-url: "https://federicomenegoz.github.io/"
+baseurl: "/UNITN-fisica-orale" 
+url: "https://federicomenegoz.github.io"
 
 markdown: kramdown
 kramdown:

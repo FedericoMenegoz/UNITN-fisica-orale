@@ -1,26 +1,46 @@
 # Cinematica
 
-## Domande
-### Moto circolare uniforme.
+---
+## Cos’è la gittata?
+Come detto nel [moto parabolico](#moto-parabolico) la gittata indica la distanza orizzontale dal punto di lancio al punto di caduta al suolo.
+
 
 ---
-### Cos’è la gittata?
-
----
-### Decomposizione delle accelerazioni nei moti piani.
-
----
-### Pulsazione e frequenza
+## Pulsazione e frequenza
 La pulsazione $\omega$ è la velocità con cui viene effettuata un'oscillazione nel moto armonico $$\omega = \frac {2\pi}T$$ con $T$ periodo del moto.
 La frequenza determina determina invece quante oscillazioni vengono fatte al secondo: $$f = \frac 1 T = \frac \omega{2\pi}$$
-### Moto parabolico
 
-### Moto circolare
-#### Non uniforme
-#### Uniforme
 
-## Extra
-### Moti su traiettoria curvilinea
+## Moto Armonico Semplice
+
+Un punto materiale segue un __moto armonico semplice__ se la sua legge oraria è definita come:
+$$x(t) = A\sin (\omega t + \phi)$$
+$A$, $\omega$ e $\phi$ sono quantità costanti e sono rispettivamente l'__ampiezza del moto__, la __pulsazione__ e la __fase iniziale__.
+
+Il moto armonico semplice è un moto rettilineo vario in cui tutte le grandezze cinematiche che lo descrivono, $x(t)$, $v(t)$ e $a(t)$ variano nel tempo.
+
+I valori estremi della funzione $\sin$ sono $1$ e $-1$ quindi il punto si muove in un segmento grande $2A$ con centro nell'origine. Al tempo $t=0$ il punto si trova in: 
+
+$$x(0) = A\sin(\phi)$$ 
+Quindi note $A$ e $\phi$ si può determinare la posizione iniziale del punto.
+
+Sappiamo che la funzione seno è periodica con periodo $2\pi$. Quindi se consideriamo due tempi $t$ e $t'=t+T$ sappiamo che per definizione: $$\omega t' + \phi = \omega t + \phi + 2 \pi  $$
+$$\cancel{\omega t} + \omega T +  \cancel\phi =  \cancel{\omega t }+ \cancel \phi + 2 \pi  $$
+$$T = \frac {2\pi}\omega$$
+La velocità del punto si ottiene derivando $x(t)$: 
+$$v(t) = \omega A cos(\omega t + \phi)$$
+L'accelerazione si ottiene con un ulteriore derivazione:
+$$a(t) = -\omega ^2 A \sin (\omega t + \phi) = -\omega ^2 x(t)$$
+
+<img alt="diagrammi orari moto armonico" src="../imgs/Cinematica-00_ArmonicoGrafiOrari.png">
+<br>
+Una condizione sufficiente affinché un moto sia armonico è che l'accelerazione del corpo sia proporzionale e di verso opposto allo spostamento rispetto alla posizione di equilibrio, indicando la presenza di una forza di richiamo (o forza restauratrice) che tende a riportare il corpo verso tale posizione.
+
+### TODO 
+- CONDIZIONI INIZIALI
+- DISEGNARE I GRAFICI ORARI
+
+## Moti su traiettoria curvilinea
 Per descrivere il moto su una traiettoria curvilinea possiamo utilizzare anche una sola coordinata, fissata l'origine arbitraria sulla traiettoria, possiamo utilizzare un'__ascissa curvilinea__ che altro non è che la lunghezza del tratto di traiettoria dall'origine.
 
 Quindi conoscendo la traiettoria, possiamo descrivere completamente il moto tramite questa ascissa curvilinea. 
@@ -55,36 +75,24 @@ $$\frac{d\theta}{dt} = \frac{d\theta}{ds} \frac {ds}{dt} = \frac{1}{R} v$$
 Sostituendo otteniamo:
 $$\vec a = \frac{dv}{dt}\vec u_T + \frac{v^2}{R}\vec u_N$$
 
-#### TODO 
+### TODO 
 - traduzione in coordinate cartesiane nel piano
 
-### Moto Armonico Semplice
-Prendiamo una molla attaccata ad un muro, la molla è orizzontale al piano su cui è adagiata, non ci sono attriti e all'estremità della molla è presente una massa puntiforme $m$, il sistema è a riposo. Fissiamo l'origine nel punto in cui la massa si trova a riposo. Ora allunghiamo la molla di una certa lunghezza $x$ per poi rilasciarla, si osserverà che la massa inizierà a oscillare periodicamente attorno all'origine: partendo dalla posizione $x$, passerà per l’equilibrio, raggiungerà la posizione $-x$, e poi tornerà indietro seguendo lo stesso percorso. Questo comportamento suggerisce che il moto possa essere descritto da una funzione sinusoidale.
+---
+## Moto circolare
+### Non uniforme
 
-Utilizzando la legge Hook's law abbiamo che:
-$$\vec F = - kx$$
-Sappiamo anche che $$\vec F = m\vec a = \frac {d^2x}{dt}$$
-quindi otteniamo la seguente equazione differenziale:
-$$\frac {d^2x}{dt} = - \frac km x$$
-Per risolverla appunto utilizziamo l'intuizione che il moto descrive una sinusoide:
-$$x(t) = A\sin(\omega+ \phi)$$
-$$v(t)=\frac {dx}{dt} = \omega A\cos(\omega+ \phi)$$
-$$a(t) = \frac {d^2x}{dt} = - \omega^2 A\sin(\omega+ \phi)$$
-da cui possiamo dire che $$\omega^2 = \frac k m$$
-Una condizione sufficiente affinché un moto sia armonico è che l'accelerazione del corpo sia proporzionale e di verso opposto allo spostamento rispetto alla posizione di equilibrio, indicando la presenza di una forza di richiamo (o forza restauratrice) che tende a riportare il corpo verso tale posizione.
+---
+### Uniforme
 
-Studiamo ora il moto:
-$$x(t) = A\sin (\omega t + \phi)$$
-#### Ampiezza moto
-$A$ è l'__ampiezza del moto__, in effetti sappiamo che la funzione $\sin$ ha come estremi $1$ e $-1$ quindi il punto percorre un segmento lungo $2A$ con centro nell'origine, il punto si sposta dall'origine di un massimo $A$.
+---
+## Moto parabolico
 
-#### Periodo
-Sappiamo che la funzione seno è periodica con periodo $2\pi$. Quindi se consideriamo due tempi $t$ e $t'=t+T$ sappiamo che per definizione: $$\omega t' + \phi = \omega t + \phi + 2 \pi  $$
-$$\cancel{\omega t} + \omega T +  \cancel\phi =  \cancel{\omega t }+ \cancel \phi + 2 \pi  $$
-$$T = \frac {2\pi}\omega$$
+---
+## Decomposizione delle accelerazioni nei moti piani.
 
-#### TODO 
-- CONDIZIONI INIZIALI
-- DISEGNARE I GRAFICI ORARI
+Considerando un [moto curvilineo](#moti-su-traiettoria-curvilinea), ed individuato il __raggio di curvatura__ si possono individuare due componenti dell'accelerazione. 
 
+Una componente __tangenziale__ che va a descrivere come cambia il modulo della velocità e una componente __normale__ che va a descrivere come cambia la direzione della velocità. 
 
+---

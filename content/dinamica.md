@@ -3,6 +3,21 @@
 ## Secondo principio della dinamica 
 ## Forza d'attrito
 ## Forza elastica
+
+Prendiamo una molla attaccata ad un muro, la molla è orizzontale al piano su cui è adagiata, non ci sono attriti e all'estremità della molla è presente una massa puntiforme $m$, il sistema è a riposo. Fissiamo l'origine nel punto in cui la massa si trova a riposo. Ora allunghiamo la molla di una certa lunghezza $x$ per poi rilasciarla, si osserverà che la massa inizierà a oscillare periodicamente attorno all'origine: partendo dalla posizione $x$, passerà per l’equilibrio, raggiungerà la posizione $-x$, e poi tornerà indietro seguendo lo stesso percorso. Questo comportamento suggerisce che il moto possa essere descritto da una funzione sinusoidale.
+
+Utilizzando la legge Hook's law abbiamo che:
+$$\vec F = - kx$$
+Sappiamo anche che $$\vec F = m\vec a = \frac {d^2x}{dt}$$
+quindi otteniamo la seguente equazione differenziale:
+$$\frac {d^2x}{dt} = - \frac km x$$
+Per risolverla appunto utilizziamo l'intuizione che il moto descrive una sinusoide:
+$$x(t) = A\sin(\omega+ \phi)$$
+$$v(t)=\frac {dx}{dt} = \omega A\cos(\omega+ \phi)$$
+$$a(t) = \frac {d^2x}{dt} = - \omega^2 A\sin(\omega+ \phi)$$
+da cui possiamo dire che $$\omega^2 = \frac k m$$
+
+
 ## Piano inclinato
 ## Pendolo
 

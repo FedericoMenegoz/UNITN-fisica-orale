@@ -1,8 +1,4 @@
-Corso: [[fisica 2025]]
-Date: 2025-07-10
-Files: [enrico](file:///Volumes/mUsiceTT/UNITN/secondo%20anno/secondo%20semestre/fisica/orale/Orale%20Fisica%202025.pdf)
 
----
 # Indice
 1. [[VARIE]]
 2. [[CINEMATICA]]

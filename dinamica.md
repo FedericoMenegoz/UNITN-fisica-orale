@@ -1,0 +1,60 @@
+# Dinamica
+## Tensione e Carrucola
+## Secondo principio della dinamica 
+## Forza d'attrito
+## Forza elastica
+## Piano inclinato
+## Pendolo
+
+### Descrizione
+
+Il pendolo semplice è costituito da un punto materiale appeso tramite filo ideale. Filo ideale significa che è inestensibile e non ha massa. 
+
+Le forze che entrano in gioco nel pendolo semplice sono la forza peso $\vec F_p = m\cdot \vec g$ e la tensione del filo $\vec T$.
+
+Un ottimo sistema di riferimento per questa situazione è quello di utilizzare l'asse concorde con il filo __asse normale__ alla traiettoria e l'__asse tangenziale__ alla traiettoria.
+
+In questo modo possiamo scomporre le forze negli assi:$$\begin{cases} 
+\vec R_N = \vec F_{PN} + \vec T = m\vec g \cdot \cos (\theta) + \vec T  \\ 
+\vec R_T = \vec F_{PT} = m\vec g \cdot \sin (\theta) \\
+\end{cases}$$
+### Asse tangenziale
+Secondo la seconda legge della dinamica nell'asse tangenziale si ottiene:
+$$-m g \cdot \sin (\theta) = ma_T $$
+l'accelerazione: 
+$$a_T = \frac{dv}{dt}$$
+
+con$$v = \omega R$$
+$$a_T = \frac{dv}{dt} = l \frac{d\omega}{dt} = lm\frac{d^2\theta}{dt}$$
+quindi si ottiene: $$-\cancel mg\sin(\theta) = \cancel ml\frac{d^2 \theta}{dt} \quad \Rightarrow \quad \frac{d^2\theta}{dt} + \frac l g \sin(\theta) = 0$$
+A questo punto la risoluzione di questa equazione differenziale risulta difficile, ma se consideriamo piccole oscillazioni ($< 10° \sim 0.17\;rad$) e ricordando che per lo sviluppo di Taylor $$\sin \theta = \theta - \frac{\theta^3}{3!} + \frac{\theta ^5}{5!} - \cdots$$ possiamo approssimare $\sin \theta$ a $\theta$ con un errore dello $0.5\%$. $$err = \bigg|\frac{\theta^3/3!}{\theta}\bigg|\cdot 100 = 0.5 \% $$
+Quindi otteniamo l'equazione differenziale del moto armonico: $$\frac{d^2\theta}{dt} + \frac l g \theta = 0$$
+$$\theta(t) = \theta_i \sin\bigg(\sqrt{\frac{l}{g}}t + \phi\bigg)$$
+$$s(t) = l \theta_i \sin\bigg(\sqrt{\frac{l}{g}}t + \phi\bigg)$$
+### Asse normale
+Applicando la seconda legge sull'asse normale invece si ottiene: $$R_N = T - mg\cos(\theta) = ma_N$$
+$$a_N = \frac{v^2}l = \omega^2 l$$
+$$T = m (g\cos(\theta) + \omega^2 l)$$
+
+Quindi la tensione del filo sarà massima con $\theta = 0$ e sarà minima nel punto più alto dell'oscillazione.
+
+
+## Domande
+1. Si enunci e si commenti la seconda legge della dinamica. Unità di misura? Sono grandezze scalari o vettoriali?
+2. Un proiettile sta procedendo parallelamente al suolo, la sua quota è invariata e la sua velocità diminuisce; si commenti la situazione con la 2° legge della dinamica
+3. Le forze di attrito sono sempre..? _hint: Opposte alla direzione del moto_
+4. Appendiamo un corpo al soffitto con una molla. Cosa succede?
+5. Cos’è la statica? _hint Su un corpo possono agire più forze_
+6. Parli dell’attrito statico
+7. Reazioni vincolari, nel modo più generico che conosci
+8. Ho una pallina che cade (in acqua? su un pavimento?) e dopo un po’ si ferma. Cosa è successo? Se volessimo scrivere un bilancio energetico?
+9. Sensazione del peso: entriamo in un ascensore con una bilancia e saliamo, cosa succede? ^a0d877
+10. Domanda di [[FISICA_ORALE#^a0d877|prima]] ma su un vagone di un treno in viaggio
+11. Terzo principio della dinamica. Se considero un sistema che prevede delle forze di reazione, mi fanno escludere a priori che il sistema sia isolato, oppure non è vero? La legge vale sempre? Quando un sistema si dice isolato?
+12. Funi inestensibili.
+13. Appendiamo una molla al soffitto con a un estremo un corpo di massa m.
+14.  Forza di attrito statico.
+15. Cos’è la quantità di moto?
+16.  Ha a disposizione una bilancia, come può misurare il tempo sapendo solo massa e lunghezza. _hint moto armonico del pendolo_
+
+

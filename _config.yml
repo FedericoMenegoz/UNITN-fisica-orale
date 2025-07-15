@@ -1,10 +1,8 @@
-# _config.yml
-title: Your Math Site
-description: A site with mathematical content
-baseurl: "" # for user sites, leave empty; for project sites use "/repo-name"
-url: "https://your-username.github.io"
+title: UNITN Fisica Orale
+description: Raccolta delle domande dell'orale in ordine tematico per il corso di fisica 1 del Prof. Iuppa.
+baseurl: "UNITN-fisica-orale" 
+url: "https://federicomenegoz.github.io/"
 
-# Build settings
 markdown: kramdown
 kramdown:
   math_engine: mathjax
@@ -16,5 +14,4 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Enable math rendering
 mathjax: true

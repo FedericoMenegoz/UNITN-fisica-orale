@@ -1,11 +1,25 @@
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+---
+layout: default
+title: Calculus Notes
+---
 
-Inline: \( e^{i\pi} + 1 = 0 \)
+# Calculus Notes
 
-Blocco:
+## Derivatives
 
-\[
-f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} x^n
-\]
+The derivative of $f(x) = x^n$ is:
+$$f'(x) = nx^{n-1}$$
+
+## Integration by Parts
+
+$$\int u \, dv = uv - \int v \, du$$
+
+Where $u$ and $dv$ are chosen strategically.
+
+## Taylor Series
+
+The Taylor series of $f(x)$ around $x = a$:
+
+$$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n$$
+
+[Back to Home](index.md)

@@ -1,7 +1,20 @@
-theme: jekyll-theme-cayman
-title: "Fisica Orale"
-show_downloads: false
+# _config.yml
+title: Your Math Site
+description: A site with mathematical content
+baseurl: "" # for user sites, leave empty; for project sites use "/repo-name"
+url: "https://your-username.github.io"
+
+# Build settings
+markdown: kramdown
 kramdown:
-  math_engine: katex
-  syntax_highlighter_opts:
-    disable: true
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+    preview_as_TeX: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Enable math rendering
+mathjax: true

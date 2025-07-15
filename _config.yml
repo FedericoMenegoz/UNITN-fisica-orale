@@ -1,3 +1,7 @@
 theme: jekyll-theme-cayman
 title: "Fisica Orale"
 show_downloads: false
+kramdown:
+  math_engine: katex
+  syntax_highlighter_opts:
+    disable: true

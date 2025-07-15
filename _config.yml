@@ -1,8 +1,3 @@
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - INDEX.md
-  - test.md
+theme: jekyll-theme-cayman
+title: "Fisica Orale"
+show_downloads: false

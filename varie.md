@@ -24,11 +24,12 @@ __Prodotto scalare__
 Dati due vettori $\vec a$ e $\vec b$ si definisce prodotto scalare la quantità $$s = \vec a \cdot \vec b = ||\vec a||\cdot ||\vec b|| \cdot \cos \theta$$
 con $\theta$ l'angolo formato dai due vettori. Il risultato del prodotto scalare è uno scalare e gode delle seguenti:
 1. il prodotto scalare è nullo solo se uno dei due vettori è nullo o se l'angolo compreso è $\frac\pi 2$ 
-2. vale la proprietà commutativa $$\vec a \cdot \vec b = ||\vec a || \cdot || \vec b|| \cdot \cos (\theta) = ||\vec b || \cdot || \vec a|| \cdot \cos (-\theta) = \vec b \cdot \vec a$$
+2. vale la proprietà commutativa 
+$$\vec a \cdot \vec b = ||\vec a || \cdot || \vec b|| \cdot \cos (\theta) = ||\vec b || \cdot || \vec a|| \cdot \cos (-\theta) = \vec b \cdot \vec a$$
 3. 
-```math
+$$
 \vec a\cdot \vec a = || \vec a||\cdot || \vec a||\cdot \cos(0) =  || \vec a||^2
-```
+$$
 4. vale la proprietà distributiva
 5. non ha senso iterare il prodotto scalare: $\vec a \cdot \vec b \cdot \vec c$ è priva di senso perché appunto $\vec a \cdot \vec b$ è uno scalare e non può essere moltiplicato scalarmente per $\vec c$
 6. se $\vec c = \vec a + \vec b$ dalla proprietà distributiva e dalla [[FISICA_ORALE#^e9838d|3]] allora $$||\vec c||^2 = (\vec a + \vec b)\cdot(\vec a + \vec b) = ||\vec a ||^2 + ||\vec b ||^2 + 2||\vec a||\, ||\vec b|| \cos \theta$$ se $\vec a \perp \vec b$ allora $$c^2 = a^2 + b^2$$

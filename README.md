@@ -1,9 +1,8 @@
-Inline: \( e^{i\pi} + 1 = 0 \)
+# Test
 
-Blocco:
-
-\[
-f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} x^n
-\]
+```math
+E = mc^2
+```
+Is this inline ? $`\hat u = \frac {\vec v}{||\vec v||}`$
 
 [test](./test.md)

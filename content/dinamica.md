@@ -1,3 +1,7 @@
+---
+title: Dinamica
+counter: 0
+---
 # Dinamica
 counter: {{ counter }} 
 ## Secondo principio della dinamica 

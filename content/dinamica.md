@@ -155,14 +155,12 @@ Poiché il proiettile non perde quota, la forza peso $m\vec g$ deve essere bilan
 ---
 
 ##### 3) Le forze di attrito sono sempre..? 
-<br>
 
 Come specificato [qui](#forza-dattrito), le forze d'attrito sono sempre opposte al moto.
 
 ---
 
 ##### 4) Appendiamo un corpo al soffitto con una molla. Cosa succede?
-<br>
 
 Quando una __molla__ è fissata al soffitto e vi appendiamo una massa $m$, la situazione è simile al caso orizzontale, ma la _posizione di equilibrio_ è diversa perché è presente anche la __forza peso__:
 
@@ -201,64 +199,64 @@ $$
 ---
 
 ##### 5) Cos’è la statica? _hint Su un corpo possono agire più forze_
-<br>
+
 
 ---
 
 ##### 6) Parli dell’attrito statico
-<br>
+
 
 ---
 
 ##### 7) Reazioni vincolari, nel modo più generico che conosci
-<br>
+
 
 ---
 
 ##### 8) Ho una pallina che cade (in acqua? su un pavimento?) e dopo un po’ si ferma. Cosa è successo? Se volessimo scrivere un bilancio energetico?
-<br>
+
 
 ---
 
 <a id="dinamica-domanda-9"></a>
 
 ##### 9) Sensazione del peso: entriamo in un ascensore con una bilancia e saliamo, cosa succede? 
-<br>
+
 
 ---
 
 ##### 10) Domanda di [prima](#dinamica-domanda-9) ma su un vagone di un treno in viaggio
-<br>
+
 
 ---
 
 ##### 11) Terzo principio della dinamica. Se considero un sistema che prevede delle forze di reazione, mi fanno escludere a priori che il sistema sia isolato, oppure non è vero? La legge vale sempre? Quando un sistema si dice isolato?
-<br>
+
 
 ---
 
 ##### 12) Funi inestensibili.
-<br>
+
 
 ---
 
 ##### 13) Appendiamo una molla al soffitto con a un estremo un corpo di massa m.
-<br>
+
 
 ---
 
 ##### 14)  Forza di attrito statico.
-<br>
+
 
 ---
 
 ##### 15) Cos’è la quantità di moto?
-<br>
+
 
 ---
 
 ##### 16)  Ha a disposizione una bilancia, come può misurare il tempo sapendo solo massa e lunghezza. _hint moto armonico del pendolo_
-<br>
+
 
 ---
 

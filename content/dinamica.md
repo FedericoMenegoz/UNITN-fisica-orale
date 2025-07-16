@@ -1,5 +1,5 @@
 # Dinamica
-{{ page.counter }}
+counter: {{ counter }} 
 ## Secondo principio della dinamica 
 Gurda [risposta](#1-si-enunci-e-si-commenti-la-seconda-legge-della-dinamica-unità-di-misura-sono-grandezze-scalari-o-vettoriali).
 

@@ -168,6 +168,12 @@ La seconda legge della dinamica detta anche __seconda legge di Newton__ è defin
 
 $$\vec F = m \vec a = m\frac{d\vec v}{dt} = m \frac {d^2 \vec s}{dt^2}$$
 
+La __forza__ è una grandezza vettoriale e la sua unità di misura è il <span class="color">Newton</span>:
+
+$$[N] = \bigg[kg\frac m{s^2} \bigg]$$
+
+Ricordando le che il [prodotto](vettori.md#prodotto-tra-un-vettore-ed-uno-scalare) tra uno scalare e un vettore, mantiene la direzione del vettore, e che la massa è sempre positiva, la forza avrà la stessa direzione e verso dell'accelerazione.
+
 >L'interazione del punto con l'ambiente circostante, espresso tramite la __forza__ $\vec F$, determina l'accelerazione del punto, ovvero la variazione della sua velocità nel tempo, secondo un fattore di proporzionalità $m$ che è la __massa inerziale__ del corpo.
 
 Si dice __massa inerziale__ perché esprime l'inerzia del corpo, cioè la sua resistenza a variare il suo stato di moto, cioè a modificare la sua velocità in modulo, direzione o verso.
@@ -252,7 +258,7 @@ $$
 
 ---
 {% assign counter = counter | plus: 1 %}
-##### {{ counter }})Cos’è la statica? _hint Su un corpo possono agire più forze_
+##### {{ counter }}) Cos’è la statica? _hint Su un corpo possono agire più forze_
 
 Secondo la __prima legge della dinamica__ (principio di inerzia), un corpo: 
 - rimane in moto rettilineo uniforme o
@@ -273,18 +279,17 @@ $$
 Perciò avendo la forza nulla, per il secondo principio della dinamica:
 
 $$ \vec a = \frac {\vec F_{tot}}m = \vec 0$$
+
 il corpo rimane fermo, o non cambia di velocità.
-
-
 
 ---
 {% assign counter = counter | plus: 1 %}
-##### {{ counter }})Parli dell’attrito statico
+##### {{ counter }}) Parli dell’attrito statico
 Vedi [attrito statico](#forza-dattrito-statico).
 
 ---
 {% assign counter = counter | plus: 1 %}
-##### {{ counter }})Reazioni vincolari, nel modo più generico che conosci
+##### {{ counter }}) Reazioni vincolari, nel modo più generico che conosci
 
 Come dice il termine le reazioni vincolari dipendono da un __vincolo__. In accordo con il [principio di azione e reazione](#terza-legge-di-newton-principio-di-azione-e-reazione) quando un corpo esercita una forza su un vincolo questo vincolo eserciterà sul corpo una forza uguale e contraria.
 
@@ -295,17 +300,43 @@ Le reazioni vincolari possono bilanciare le forze agenti sul corpo in un sistema
 ---
 
 
-<a id="dinamica-domanda-9"></a>
-{% assign counter = counter | plus: 1 %}
-##### {{ counter }})Sensazione del peso: entriamo in un ascensore con una bilancia e saliamo, cosa succede? 
 
-Le forze in gioco in questo sistema sono la rezione vincolare $\vec N$ e la nostra forza peso $\vec P = m\vec g$
+<a id="dinamica-domanda-ascensore"></a>
+
+{% assign counter = counter | plus: 1 %}
+##### {{ counter }}) Sensazione del peso: entriamo in un ascensore con una bilancia e saliamo, cosa succede? 
+
+Le forze in gioco sono: 
+- la rezione vincolare $\vec N$ (verso l'alto)
+- la forza peso $\vec P = m\vec g$ (verso il basso) 
+
+Applicando la seconda legge della dinamica lungo la direzione verticale (positiva verso l'alto):
+
+$$\vec N + m\vec g = m\vec a \quad \Rightarrow \quad N - mg = ma \quad \Rightarrow \quad N = m (a + g) > mg$$
+
+Quindi durante l'accelerazione la bilancia segna un valore maggiore rispetto alla situazione di quiete, poiché misura la forza che il corpo esercita su di essa:
+
+$$ m_{indicato} =\frac {F_{misurato}} g $$
+
+Quando $N \ne mg$ a causa di un'accelerazione, la bilancia interpreterà questa forza come se fosse dovuta a una massa apparentemente maggiore.
 
 
 ---
 {% assign counter = counter | plus: 1 %}
-##### {{ counter }}) Domanda di [prima](#dinamica-domanda-9) ma su un vagone di un treno in viaggio
+##### {{ counter }}) Domanda di [prima](#dinamica-domanda-ascensore) ma su un vagone di un treno in viaggio
 
+Le forze in gioco sono:
+- __sull'asse verticale__ la forza peso $\vec P = m\vec g$ (verso il basso) e la reazione vincolare $\vec N$ esercitata dalla bilancia (verso l'alto) 
+- __sull'asse orizzontale__ se il treno accelera allora comparirà la forza d'attrito statico nella direzione del moto che impedisce alla persona di scivolare all’indietro
+
+Assumendo appunto che la persona non scivoli (quindi $\mu_s N > ma$) possiamo dire che la risultante delle forze orizzontali è nulla rispetto al sistema solidale con il vagone. 
+
+Sull'asse verticale, se i binari sono perfettamente orizzontali (non ci sono accelerazioni nella verticale) otteniamo:
+
+$$N - mg = 0 \quad \Rightarrow \quad N = mg$$
+
+Quindi in questo caso la bilancia misura correttamente il peso reale e la massa indicata è la stessa che viene misurata quando il treno è fermo.
+ 
 
 ---
 {% assign counter = counter | plus: 1 %}

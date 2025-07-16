@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
     
-    <!-- MathJax Configuration -->
     <script>
         window.MathJax = {
             tex: {
@@ -23,7 +22,6 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
-    <!-- Basic CSS -->
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -36,6 +34,8 @@
         pre { background: #f4f4f4; padding: 15px; border-radius: 5px; }
         blockquote { border-left: 4px solid #baff7d; margin: 0; padding-left: 20px; background-color: #d9ffb7; }
         h5 {
+            font-size: medium;
+            text-transform: uppercase;
             color: firebrick;
         }
         h6 {
@@ -53,7 +53,9 @@
     </main>
     
     <footer>
-        <p><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></p>
+        <p>
+            <a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+        </p>
     </footer>
 </body>
 </html>

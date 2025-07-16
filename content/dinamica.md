@@ -1,8 +1,8 @@
 # Dinamica
 ## Secondo principio della dinamica 
 Gurda [risposta](#1-si-enunci-e-si-commenti-la-seconda-legge-della-dinamica-unità-di-misura-sono-grandezze-scalari-o-vettoriali).
-## Forza d'attrito
-### Forza d'attrito radente
+## Forza d'attrito radente
+### Forza d'attrito statico
 Sperimentalmente si osserva che quando si applica ad un corpo appoggiato su di un piano orizzontale una forza parallela al piano, il corpo rimane fermo fino a che la forza non supera in modulo un certo valore:
 
 $$F < \mu_sN$$
@@ -156,7 +156,7 @@ Poiché il proiettile non perde quota, la forza peso $m\vec g$ deve essere bilan
 
 ##### 3) Le forze di attrito sono sempre..? 
 
-Come specificato [qui](#forza-dattrito), le forze d'attrito sono sempre opposte al moto.
+Come specificato [qui](#forza-dattrito-radente), le forze d'attrito sono sempre opposte al moto.
 
 ---
 
@@ -200,11 +200,33 @@ $$
 
 ##### 5) Cos’è la statica? _hint Su un corpo possono agire più forze_
 
+Secondo la __prima legge della dinamica__ (principio di inerzia), un corpo: 
+- rimane in moto rettilineo uniforme o
+- in rimane in quiete ($v = 0$) 
+
+finché la risultante delle forze esterne che agiscono su di esso è __nulla__.
+
+Un corpo è in __equilibrio statico__ quando la sommatoria delle forze agenti su di esso si bilanciano esattamente, quindi la risultante è nulla: 
+
+$$
+\sum_i \vec F_i = \vec 0 \rightarrow \begin{cases}
+F_x = \sum_i F_{i,x} = 0 \\
+F_y = \sum_i F_{i,y} = 0 \\
+F_z = \sum_i F_{i,z} = 0 \\
+\end{cases}
+$$
+
+Perciò avendo la forza nulla, per il secondo principio della dinamica:
+
+$$ \vec a = \frac {\vec F_{tot}}m = \vec 0$$
+il corpo rimane fermo, o non cambia di velocità.
+
+
 
 ---
 
 ##### 6) Parli dell’attrito statico
-
+Vedi [attrito statico](#forza-dattrito-statico).
 
 ---
 

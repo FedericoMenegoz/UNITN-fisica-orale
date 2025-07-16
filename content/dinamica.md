@@ -1,8 +1,39 @@
 # Dinamica
 ## Secondo principio della dinamica 
+Gurda [risposta](#1-si-enunci-e-si-commenti-la-seconda-legge-della-dinamica-unità-di-misura-sono-grandezze-scalari-o-vettoriali).
+## Forza d'attrito
+### Forza d'attrito radente
+Sperimentalmente si osserva che quando si applica ad un corpo appoggiato su di un piano orizzontale una forza parallela al piano, il corpo rimane fermo fino a che la forza non supera in modulo un certo valore:
+
+$$F < \mu_sN$$
+Definiamo $\mu_s$ come __coefficiente di attrito statico__ (adimensionale) che è dovuto alle forze di coesione tra il corpo e il piano in particolare: 
+$$ 
+\begin{cases}
+quiete && F \le \mu_s N \\
+moto && F > \mu_s N \\
+\end{cases}
+$$
+
+Quando in quiete la risultante delle forze deve essere nulla:
+$$ \vec R + \vec F + \vec P = 0$$
+
+- $\vec R$ __reazione vincolare__ del piano con $\vec N$ sua componente verticale $N = mg$ e $\vec F_{as}$ sua componente orizzontale $F_{as} = F$
+- $\vec P$ __forza peso__ del corpo
+
+>Quindi il valore della forza di attrito statico non ha un valore prefissato, ma varia con il variare della forza $\vec F$ applicata, fino a che quest'ultima non supera in modulo $\mu_s N$.
+
+### Forza d'attrito dinamico
+Dal momento in cui la forza $\vec F$ supera $\mu_s N$ in modulo allora si osserva che si oppone al moto un'altra forza, detta __forza di attrito radente dinamico__:
+$$F_{ad} = \mu_d N$$
+dove $\mu_d$ è detto __coefficiente di attrito dinamico__ e risulta sempre che 
+$$\mu_d < \mu_s$$
+
+La risultante delle forze ortogonali al piano è nulla, quindi possiamo dedurre che la forza d'attrito dinamico ha stessa direzione e verso contrario al versore della velocità $\hat u_v$: 
+$$ \vec F_{ad} = - \mu_d N \hat u_v$$
+
+In natura eliminare l'attrito per due materiali in contatto è impossibile, per quanto si possa comunque ridurre. Quindi per mantere un corpo in un moto rettilineo uniforme bisogna applicare una forza eguale e contraria alla forza d'attrito.
 
 ## Tensione e Carrucola
-## Forza d'attrito
 ## Forza elastica
 
 Prendiamo una molla attaccata ad un muro, la molla è orizzontale al piano su cui è adagiata, non ci sono attriti e all'estremità della molla è presente una massa puntiforme $m$, il sistema è a riposo. Fissiamo l'origine nel punto in cui la massa si trova a riposo. Ora allunghiamo la molla di una certa lunghezza $x$ per poi rilasciarla, si osserverà che la massa inizierà a oscillare periodicamente attorno all'origine: partendo dalla posizione $x$, passerà per l’equilibrio, raggiungerà la posizione $-x$, e poi tornerà indietro seguendo lo stesso percorso. Questo comportamento suggerisce che il moto possa essere descritto da una funzione sinusoidale.
@@ -56,8 +87,7 @@ Quindi la tensione del filo sarà massima con $\theta = 0$ e sarà minima nel pu
 
 
 ## Domande
-##### Si enunci e si commenti la seconda legge della dinamica. Unità di misura? Sono grandezze scalari o vettoriali?
-
+##### 1) Si enunci e si commenti la seconda legge della dinamica. Unità di misura? Sono grandezze scalari o vettoriali?
 
 La seconda legge della dinamica detta anche __seconda legge di Newton__ è definita come
 
@@ -79,33 +109,96 @@ $$\vec F = \frac {d\vec p}{dt}$$
 
 
 - todo: definizione impulso da $\vec Fdt =d\vec p$ 
-
 <br>
+---
 <br>
+
+##### 2) Un proiettile sta procedendo parallelamente al suolo, la sua quota è invariata e la sua velocità diminuisce; si commenti la situazione con la 2° legge della dinamica
 <br>
+Se il proiettile sta proseguendo parallelamente al suolo, mantenendo quota costande, ma con velocità in diminuzione, significa che il corpo ha un'accelerazione opposta al vettore velocità.
+Questo significa che la risultante delle forze è anchessa opposta al moto ma con ugual direzione. 
 
-2. Un proiettile sta procedendo parallelamente al suolo, la sua quota è invariata e la sua velocità diminuisce; si commenti la situazione con la 2° legge della dinamica
+$$
+\vec R = m\frac {d\vec v}{dt}
+$$
 
-
+Ho parlato di __risultante__ perché ipotizzando che ci troviamo sulla terra, sappiamo che sul corpo esercita la forza peso ($m\vec g$), ma non perdendo quotà questa è bilanciata da qualche altra forza. Oppure il corpo ha una velocità tale che si trova in orbita.
 
 ---
-3. Le forze di attrito sono sempre..? _hint: Opposte alla direzione del moto_
-4. Appendiamo un corpo al soffitto con una molla. Cosa succede?
-5. Cos’è la statica? _hint Su un corpo possono agire più forze_
-6. Parli dell’attrito statico
-7. Reazioni vincolari, nel modo più generico che conosci
-8. Ho una pallina che cade (in acqua? su un pavimento?) e dopo un po’ si ferma. Cosa è successo? Se volessimo scrivere un bilancio energetico?
-9. Sensazione del peso: entriamo in un ascensore con una bilancia e saliamo, cosa succede? ^a0d877
-10. Domanda di [[FISICA_ORALE#^a0d877|prima]] ma su un vagone di un treno in viaggio
-11. Terzo principio della dinamica. Se considero un sistema che prevede delle forze di reazione, mi fanno escludere a priori che il sistema sia isolato, oppure non è vero? La legge vale sempre? Quando un sistema si dice isolato?
-12. Funi inestensibili.
-13. Appendiamo una molla al soffitto con a un estremo un corpo di massa m.
-14.  Forza di attrito statico.
-15. Cos’è la quantità di moto?
-16.  Ha a disposizione una bilancia, come può misurare il tempo sapendo solo massa e lunghezza. _hint moto armonico del pendolo_
+
+##### 3) Le forze di attrito sono sempre..? _hint: Opposte alla direzione del moto_
+<br>
 
 ---
-17. Quali sono le forze fondamentali della natura?
+
+##### 4) Appendiamo un corpo al soffitto con una molla. Cosa succede?
+<br>
+
+---
+
+##### 5) Cos’è la statica? _hint Su un corpo possono agire più forze_
+<br>
+
+---
+
+##### 6) Parli dell’attrito statico
+<br>
+
+---
+
+##### 7) Reazioni vincolari, nel modo più generico che conosci
+<br>
+
+---
+
+##### 8) Ho una pallina che cade (in acqua? su un pavimento?) e dopo un po’ si ferma. Cosa è successo? Se volessimo scrivere un bilancio energetico?
+<br>
+
+---
+
+<a id="dinamica-domanda-9"></a>
+
+##### 9) Sensazione del peso: entriamo in un ascensore con una bilancia e saliamo, cosa succede? 
+<br>
+
+---
+
+##### 10) Domanda di [prima](#dinamica-domanda-9) ma su un vagone di un treno in viaggio
+<br>
+
+---
+
+##### 11) Terzo principio della dinamica. Se considero un sistema che prevede delle forze di reazione, mi fanno escludere a priori che il sistema sia isolato, oppure non è vero? La legge vale sempre? Quando un sistema si dice isolato?
+<br>
+
+---
+
+##### 12) Funi inestensibili.
+<br>
+
+---
+
+##### 13) Appendiamo una molla al soffitto con a un estremo un corpo di massa m.
+<br>
+
+---
+
+##### 14)  Forza di attrito statico.
+<br>
+
+---
+
+##### 15) Cos’è la quantità di moto?
+<br>
+
+---
+
+##### 16)  Ha a disposizione una bilancia, come può misurare il tempo sapendo solo massa e lunghezza. _hint moto armonico del pendolo_
+<br>
+
+---
+
+##### 17) Quali sono le forze fondamentali della natura?
 
 Le forze fondamentali della natura sono riconducibili all'interazione [Gravitazionale](./forza-gravitazionale.md), l'interazione Elettromagnetica, a livello nucleare e subnucleare ci sono l'interazione Forte e l'interazione Debole
 

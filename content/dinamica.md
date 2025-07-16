@@ -168,15 +168,15 @@ La seconda legge della dinamica detta anche __seconda legge di Newton__ è defin
 
 $$\vec F = m \vec a = m\frac{d\vec v}{dt} = m \frac {d^2 \vec s}{dt^2}$$
 
-La __forza__ è una grandezza vettoriale e la sua unità di misura è il <span class="color">Newton</span>:
+La __forza__ è una grandezza vettoriale e la sua unità di misura è il __Newton__:
 
 $$[N] = \bigg[kg\frac m{s^2} \bigg]$$
-
-Ricordando le che il [prodotto](vettori.md#prodotto-tra-un-vettore-ed-uno-scalare) tra uno scalare e un vettore, mantiene la direzione del vettore, e che la massa è sempre positiva, la forza avrà la stessa direzione e verso dell'accelerazione.
 
 >L'interazione del punto con l'ambiente circostante, espresso tramite la __forza__ $\vec F$, determina l'accelerazione del punto, ovvero la variazione della sua velocità nel tempo, secondo un fattore di proporzionalità $m$ che è la __massa inerziale__ del corpo.
 
 Si dice __massa inerziale__ perché esprime l'inerzia del corpo, cioè la sua resistenza a variare il suo stato di moto, cioè a modificare la sua velocità in modulo, direzione o verso.
+
+Ricordando le che il [prodotto](vettori.md#prodotto-tra-un-vettore-ed-uno-scalare) tra uno scalare e un vettore, mantiene la direzione del vettore, e che la massa è sempre positiva, la forza avrà la stessa direzione e verso dell'accelerazione.
 
 Definita la quantità di moto come 
 

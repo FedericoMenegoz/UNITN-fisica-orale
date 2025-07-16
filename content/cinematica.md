@@ -41,7 +41,7 @@ L'accelerazione si ottiene con un ulteriore derivazione:
 
 $$a(t) = -\omega ^2 A \sin (\omega t + \phi) = -\omega ^2 x(t)$$
 
-<img alt="diagrammi orari moto armonico" src="../imgs/Cinematica-00_ArmonicoGrafiOrari.png" width="300">
+<img alt="diagrammi orari moto armonico" src="../imgs/Cinematica-00_ArmonicoGrafiOrari.png" width="650" height="550">
 <br>
 Una condizione sufficiente affinché un moto sia armonico è che l'accelerazione del corpo sia proporzionale e di verso opposto allo spostamento rispetto alla posizione di equilibrio, indicando la presenza di una forza di richiamo (o forza restauratrice) che tende a riportare il corpo verso tale posizione.
 
@@ -102,15 +102,19 @@ Si chiama moto circolare un moto la cui traiettoria è rappresentata da una circ
 Nel caso il modulo della velocità sia costante allora il moto sarà __uniforme__ per cui: 
 $$\lvert\vec  v\rvert = cost \quad \Rightarrow \quad \vec a = \vec a_N$$
 Essendo il modulo della velocità costante allora sicuramente il punto percorrerà la circonferenza in un certo periodo e per definire il moto ci basta conoscere appunto il periodo ed il raggio della circonferenza che possono essere messi in relazione come segue:
+
 $$T = \frac C v = \frac {2\pi R}{v} $$
+
 ### Rappresentazione con ascissa curvilinea
 Si può descrivere il moto in relazione allo spazio percorso sulla circonferenza 
+
 $$s(t) = \theta(t) R$$
 
 ### Rappresentazione polare
 Per descrivere il moto possiamo utilizzare un sistema di coordinate polari con origine nel centro della circonferenza in cui $r(t) = R = cost$ e l'angolo $\theta(t)$ variabile. 
 
 ### Rappresentazione cartesiana
+
 $$\theta(t) = \begin{cases} 
 x(t) = R\cos(\theta(t)) \\ 
 y(t) = R\sin(\theta(t)) \\
@@ -121,6 +125,7 @@ Si definisce __velocità angolare__ istantanea la derivata rispetto al tempo del
 $$\omega = \frac {d\theta}{dt} $$
 
 Che può venire espressa come:
+
 $$\omega = \frac {d\theta}{dt} = \frac 1 R \frac {ds}{dt} = \frac v R$$
 
 La velocità sarà sempre tangente alla circonferenza nel punto come visto nel [moto piano](#velocità-tangente) e l'accelerazione a sua volta sarà perpendicolare alla velocità (sempre come visto nel [moto piano](#derivata-versore)) quindi l'accelerazione punterà sempre verso il centro della circonferenza (perché perpendicolare alla tangente). 
@@ -129,15 +134,16 @@ Un altro modo per mostrare che l’accelerazione è perpendicolare alla velocit�
 Quindi l'accelerazione nel moto circolare uniforme è sempre diretta verso il centro ed è chiamata __centripeda__.
 Quanto vale?
 
-
 $$\vec a_c = \frac {d\vec v}{dt} = \frac {d(v\cdot \hat u_T)}{dt}= \cancel{\frac{dv}{dt}\cdot \hat u_T} + v\cdot \frac {d\hat u_T}{dt} = v\cdot \frac {d \theta}{dt}\cdot \hat u_N = v   \cdot \omega \cdot \hat u_N =    \frac {v^2} R \cdot \hat u_N$$
 
 In modulo
+
 $$a_c = \frac {v^2}R = \omega ^2 R$$
 
 ---
 ### Non uniforme
 Nel moto circolare non uniforme l'accelerazione ha una componente tangenziale in quanto il modulo della velocità non è costante quindi l'accelerazione angolare:
+
 $$\alpha = \frac {d \omega}{dt} = \frac 1 R\frac {dv}{dt} = \frac {a_T}R$$
 
 #### TODO

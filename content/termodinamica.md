@@ -40,7 +40,7 @@
 3. Definisci capacità termica. è un’equazione scalare o vettoriale? Quali sono le unità di misura?
 4. Equazione che descrive lo scambio di calore tra due oggetti posti a contatto termico
 5. Primo principio della dinamica. _hint: Nella formulazione NON COMPARE la parola forza!_
-6. Si disegnino le varie trasformazioni termodinamiche studiate.
+6. Si disegnino le vettori trasformazioni termodinamiche studiate.
 7. Per comprimere un gas facendo meno lavoro possibile che trasformazione ci conviene usare? _hint adiabatica_
 8.  Ha un senso che un gas abbia una pressione negativa? Perché no?
 9. Cos’è una trasformazione quasi-statica? + definizione trasformazione reversibile

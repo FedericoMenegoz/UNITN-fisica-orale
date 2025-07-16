@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Varie
+title: vettori
 ---
 
-# Varie
+# vettori
 ## Disegna le operazioni vettoriali che abbiamo studiato.
 
 ### Prodotto tra un vettore ed uno scalare
 
-<img src="../imgs/Varie-00_ScalareConVettore.png" alt="Prodotto di uno scalare con un vettore" width="400">
+<img src="../imgs/vettori-00_ScalareConVettore.png" alt="Prodotto di uno scalare con un vettore" width="400">
 
 <br>
 
@@ -21,7 +21,7 @@ Grazie a questa operazione possiamo esprimere ogni vettore come il prodotto scal
 
 ### Somma tra vettori
 
-<img src="../imgs/Varie-01_SommaVettori.png" alt="Somma tra Vettori" width="400">
+<img src="../imgs/vettori-01_SommaVettori.png" alt="Somma tra Vettori" width="400">
 
 <br>
 
@@ -38,7 +38,7 @@ Dato un sistema di riferimento è utile _scomporre_ il vettore nelle sue compone
 
 ### Prodotto scalare
 
-<img src="../imgs/Varie-02_ProdottoScalare.png" alt="Somma tra Vettori" width="400">
+<img src="../imgs/vettori-02_ProdottoScalare.png" alt="Somma tra Vettori" width="400">
 
 <br>
 Dati due vettori $\vec a$ e $\vec b$ si definisce prodotto scalare la quantità 
@@ -63,7 +63,7 @@ Infine un altro modo per visualizzare il prodotto scalare è quello di pensarlo 
 
 ### Prodotto vettoriale
 
-<img src="../imgs/Varie-03_ProdottoVettoriale.png" alt="Somma tra Vettori" width="400">
+<img src="../imgs/vettori-03_ProdottoVettoriale.png" alt="Somma tra Vettori" width="400">
 
 <br>
 
@@ -83,12 +83,7 @@ Il prodotto vettoriale si può iterare, ma non è associativo quindi va specific
 
 ---
 
-## Quali sono le forze fondamentali della natura?
-Le forze fondamentali della natura sono la forza Gravitazionale, la forza Elettromagnetica, la forza Forte e quella Debole
-
----
 
 ## Operazioni tra vettori. Prodotto vettoriale. Prodotto Scalare.
 [risposta precedente](#disegna-le-operazioni-vettoriali-che-abbiamo-studiato)
 
-## Radianti

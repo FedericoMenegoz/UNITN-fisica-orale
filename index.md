@@ -1,5 +1,5 @@
 # Indice
-1. [varie](./content/varie.md)
+1. [vettori](./content/vettori.md)
 2. [cinematica](./content/cinematica.md)
 3. [dinamica](./content/dinamica.md)
 4. [enerigia meccanica](./content/energia-meccanica.md)

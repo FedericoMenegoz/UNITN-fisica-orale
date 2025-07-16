@@ -176,6 +176,7 @@ $$x_G = \frac {v_0^2\sin (2\theta)}g$$
 Ottenuta la gittata possiamo calcolare l'__altezza massima__ sapendo che la parabola è simmetrica e quindi $x_M = \frac{x_G}2$
 
 $$y(x_M) = \frac {2v_0^2\cos\theta\sin \theta}{2g} \tan \theta - \bigg(\frac {2v_0^2\cos\theta\sin \theta}{2g} \bigg)^2\frac g {2v_0^2cos^2\theta}$$
+
 $$= \frac{2v_0^2\sin^2\theta}{2g}-  \frac {2v_0^2\sin^2 \theta}{4g} = y_M = \frac {v^2_0\sin^2\theta}{2g}$$
 
 ### todo

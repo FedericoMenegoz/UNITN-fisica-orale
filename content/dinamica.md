@@ -1,6 +1,7 @@
 # Dinamica
-## Tensione e Carrucola
 ## Secondo principio della dinamica 
+
+## Tensione e Carrucola
 ## Forza d'attrito
 ## Forza elastica
 
@@ -56,6 +57,10 @@ Quindi la tensione del filo sarà massima con $\theta = 0$ e sarà minima nel pu
 
 ## Domande
 1. Si enunci e si commenti la seconda legge della dinamica. Unità di misura? Sono grandezze scalari o vettoriali?
+
+
+
+---
 2. Un proiettile sta procedendo parallelamente al suolo, la sua quota è invariata e la sua velocità diminuisce; si commenti la situazione con la 2° legge della dinamica
 3. Le forze di attrito sono sempre..? _hint: Opposte alla direzione del moto_
 4. Appendiamo un corpo al soffitto con una molla. Cosa succede?
@@ -71,5 +76,13 @@ Quindi la tensione del filo sarà massima con $\theta = 0$ e sarà minima nel pu
 14.  Forza di attrito statico.
 15. Cos’è la quantità di moto?
 16.  Ha a disposizione una bilancia, come può misurare il tempo sapendo solo massa e lunghezza. _hint moto armonico del pendolo_
+
+---
+17. Quali sono le forze fondamentali della natura?
+
+Le forze fondamentali della natura sono riconducibili all'interazione [Gravitazionale](./forza-gravitazionale.md), l'interazione Elettromagnetica, a livello nucleare e subnucleare ci sono l'interazione Forte e l'interazione Debole
+
+---
+
 
 

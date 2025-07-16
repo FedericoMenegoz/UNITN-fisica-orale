@@ -56,9 +56,8 @@ Quindi la tensione del filo sarà massima con $\theta = 0$ e sarà minima nel pu
 
 
 ## Domande
-<p class="question">
-1. Si enunci e si commenti la seconda legge della dinamica. Unità di misura? Sono grandezze scalari o vettoriali?
-</p>
+##### Si enunci e si commenti la seconda legge della dinamica. Unità di misura? Sono grandezze scalari o vettoriali?
+
 
 La seconda legge della dinamica detta anche __seconda legge di Newton__ è definita come
 

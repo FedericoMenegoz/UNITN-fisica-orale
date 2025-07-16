@@ -81,7 +81,9 @@ $$\vec F = \frac {d\vec p}{dt}$$
 
 - todo: definizione impulso da $\vec Fdt =d\vec p$ 
 
-<hr>
+<br>
+<br>
+<br>
 
 2. Un proiettile sta procedendo parallelamente al suolo, la sua quota è invariata e la sua velocità diminuisce; si commenti la situazione con la 2° legge della dinamica
 

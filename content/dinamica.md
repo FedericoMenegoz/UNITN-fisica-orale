@@ -132,13 +132,17 @@ Poiché il proiettile non perde quota, la forza peso $m\vec g$ deve essere bilan
 
 ---
 
-##### 3) Le forze di attrito sono sempre..? _hint: Opposte alla direzione del moto_
+##### 3) Le forze di attrito sono sempre..? 
 <br>
+
+Come specificato [qui](#forza-dattrito), le forze d'attrito sono sempre opposte al moto.
 
 ---
 
 ##### 4) Appendiamo un corpo al soffitto con una molla. Cosa succede?
 <br>
+
+
 
 ---
 

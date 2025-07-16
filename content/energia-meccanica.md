@@ -13,6 +13,9 @@
 5. Definizione di energia potenziale (generale).
 6. definizione di energia potenziale. Cos’è una forza conservativa. Esempi di forze conservative.
 7.  Si definisca il lavoro. Analisi dimensionale e senso fisico. Significato del prodotto scalare.
+##### 8) Ho una pallina che cade (in acqua? su un pavimento?) e dopo un po’ si ferma. Cosa è successo? Se volessimo scrivere un bilancio energetico?
+
+
 8. Si enunci il principio di conservazione dell’energia meccanica, nella maniera più generale consosciuta.
 
 

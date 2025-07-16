@@ -1,6 +1,17 @@
 # Dinamica
+{{ page.counter }}
 ## Secondo principio della dinamica 
 Gurda [risposta](#1-si-enunci-e-si-commenti-la-seconda-legge-della-dinamica-unità-di-misura-sono-grandezze-scalari-o-vettoriali).
+
+## Terza legge di Newton (principio di azione e reazione)
+
+> - se un corpo <span class="color">__A__</span> esercita su un corpo <span class="color">__B__</span> una forza $\vec F_{A\rightarrow B}$, allora il corpo <span class="color">__B__</span> eserciterà una forza $\vec F_{B\rightarrow A}$ su <span class="color">__A__</span>
+> - le due forze hanno stessa direzione, stesso modulo e hanno verso opposto
+> $$\vec F_{A\rightarrow B} = - \vec F_{B\rightarrow A}$$
+> - le due forze hanno la stessa retta d'azione
+> 
+
+
 ## Forza d'attrito radente
 ### Forza d'attrito statico
 Sperimentalmente si osserva che quando si applica ad un corpo appoggiato su di un piano orizzontale una forza parallela al piano, il corpo rimane fermo fino a che la forza non supera in modulo un certo valore:
@@ -232,10 +243,13 @@ Vedi [attrito statico](#forza-dattrito-statico).
 
 ##### 7) Reazioni vincolari, nel modo più generico che conosci
 
+Come dice il termine le reazioni vincolari dipendono da un __vincolo__. In accordo con il [principio di azione e reazione](#terza-legge-di-newton-principio-di-azione-e-reazione) quando un corpo esercita una forza su un vincolo questo vincolo eserciterà sul corpo una forza uguale e contraria.
+
+In generale la reazione vincolare non si può conoscere a priori, ma va analizzata caso per caso andando a valutare il sistema fisico e il moto del corpo.
+
+Le reazioni vincolari possono bilanciare le forze agenti sul corpo in un sistema in equilibrio, oppure vincolare la traiettoria del corpo. 
 
 ---
-
-##### 8) Ho una pallina che cade (in acqua? su un pavimento?) e dopo un po’ si ferma. Cosa è successo? Se volessimo scrivere un bilancio energetico?
 
 
 ---

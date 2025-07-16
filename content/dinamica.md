@@ -56,7 +56,9 @@ Quindi la tensione del filo sarà massima con $\theta = 0$ e sarà minima nel pu
 
 
 ## Domande
+<p class="question">
 1. Si enunci e si commenti la seconda legge della dinamica. Unità di misura? Sono grandezze scalari o vettoriali?
+</p>
 
 La seconda legge della dinamica detta anche __seconda legge di Newton__ è definita come
 
@@ -79,7 +81,7 @@ $$\vec F = \frac {d\vec p}{dt}$$
 
 - todo: definizione impulso da $\vec Fdt =d\vec p$ 
 
----
+<hr>
 
 2. Un proiettile sta procedendo parallelamente al suolo, la sua quota è invariata e la sua velocità diminuisce; si commenti la situazione con la 2° legge della dinamica
 

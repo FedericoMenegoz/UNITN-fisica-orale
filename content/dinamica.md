@@ -36,18 +36,40 @@ In natura eliminare l'attrito per due materiali in contatto è impossibile, per 
 ## Tensione e Carrucola
 ## Forza elastica
 
-Prendiamo una molla attaccata ad un muro, la molla è orizzontale al piano su cui è adagiata, non ci sono attriti e all'estremità della molla è presente una massa puntiforme $m$, il sistema è a riposo. Fissiamo l'origine nel punto in cui la massa si trova a riposo. Ora allunghiamo la molla di una certa lunghezza $x$ per poi rilasciarla, si osserverà che la massa inizierà a oscillare periodicamente attorno all'origine: partendo dalla posizione $x$, passerà per l’equilibrio, raggiungerà la posizione $-x$, e poi tornerà indietro seguendo lo stesso percorso. Questo comportamento suggerisce che il moto possa essere descritto da una funzione sinusoidale.
+Si definisce __forza elastica__ una forza con direzione costante, con verso sempre rivolta a una posizione di equilibrio, e con modulo proporzionale alla distanza dal'equilibrio.
 
-Utilizzando la legge Hook's law abbiamo che:
+Se assumiamo come asse $x$ la direzione della forza allora possiamo scrivere la __legge di Hooke__:
+$$\vec F_{el} = -k\,x\,\hat u_x$$
+In cui $k>0$ è la costante elsastica $\big[\frac N m\big]$ e il segno negativo indica che la forza è di __richiamo__ (cioè diretta verso l'equilibrio).
+
+### Molla
+Consideriamo una molla attaccata ad un muro, la molla è orizzontale al piano su cui è adagiata, non ci sono attriti e all'estremità della molla è presente una massa puntiforme $m$, il sistema è a riposo. 
+
+Fissiamo l'origine nel punto in cui la massa si trova a riposo. Ora allunghiamo la molla di una certa lunghezza $x$ per poi rilasciarla, si osserverà che la massa inizierà a oscillare periodicamente attorno all'origine: 
+- passa per la posizione di equilibrio
+- raggiunge la posizione opposta $-x$
+- torna indietro ripetendo ciclicamente il moto
+
+Questa periodicità suggerisce che il moto possa essere descritto da una funzione sinusoidale.
+
+Sapendo che la forza elastica e definita come (Hook's law):
+
 $$\vec F = - kx$$
-Sappiamo anche che $$\vec F = m\vec a = \frac {d^2x}{dt}$$
-quindi otteniamo la seguente equazione differenziale:
+
+E applicando la seconda legge della dinamica
+
+$$\vec F = m\vec a = m\frac {d^2x}{dt}$$
+
+Eguagliando si ottiene
+
 $$\frac {d^2x}{dt} = - \frac km x$$
-Per risolverla appunto utilizziamo l'intuizione che il moto descrive una sinusoide:
-$$x(t) = A\sin(\omega+ \phi)$$
-$$v(t)=\frac {dx}{dt} = \omega A\cos(\omega+ \phi)$$
-$$a(t) = \frac {d^2x}{dt} = - \omega^2 A\sin(\omega+ \phi)$$
-da cui possiamo dire che $$\omega^2 = \frac k m$$
+
+Notiamo che ponendo $\sqrt{\frac k m} = \omega$ otteniamo la legge del [moto arominico](cinematica.md#moto-armonico-semplice)
+$$\frac {d^2x}{dt}  + \omega^2 x = 0$$
+
+I valori dell'ampiezza $A$ e la fase iniziale $\phi$ si calcolando dalle condizioni iniziali:
+$$x_0 = A\sin(\phi) \quad \quad 0 = \omega A \cos(\phi)$$
+- todo condizioni iniziali con $v_0\ne0$
 
 
 ## Piano inclinato
@@ -142,6 +164,38 @@ Come specificato [qui](#forza-dattrito), le forze d'attrito sono sempre opposte 
 ##### 4) Appendiamo un corpo al soffitto con una molla. Cosa succede?
 <br>
 
+Quando una __molla__ è fissata al soffitto e vi appendiamo una massa $m$, la situazione è simile al caso orizzontale, ma la _posizione di equilibrio_ è diversa perché è presente anche la __forza peso__:
+
+$$mg = kx_0 \quad \Rightarrow \quad x_0 = \frac {mg}k$$
+
+Quindi la nuova posizione di equilibrio si troverà più in basso rispetto alla lunghezza della molla a riposo senza massa o posizionata orizzontalmente.
+
+Valutiamo due casi:
+###### a) Rilascio il corpo esattamente nella posizione di equilibrio
+Il sistema rimane a riposo, in particolare abbiamo che secondo la seconda legge della dinamica: 
+
+$$\vec R = m\vec a = \vec 0$$
+
+con 
+
+$$\vec R = \vec P + \vec F_{el} = \vec 0 \quad \Rightarrow \quad  mg = kx_0$$
+
+###### b) Rilascio il corpo non dalla posizione di equilibrio
+Rilasciando il corpo in una posizione diversa da $x_0$ la risultante delle forze richiamerà il corpo verso $x_0$ risultando così in un moto armonico semplice.
+
+Poniamo l'origine su $x_0$ e $\Delta x$ il discostamento dall'equilibrio, sappiamo che il moto rispetta la legge del [moto armonico semplice](cinematica.md#moto-armonico-semplice):
+
+$$x(t) = A\sin(\omega t + \phi)$$
+
+$$\begin {cases}
+x(0) = \Delta x = A \sin(\phi) \\
+v_0 = 0 = \omega A\cos(\phi) \\
+\end{cases} \Rightarrow  
+\begin {cases}
+A = \Delta x && \phi = \frac \pi 2 \\
+A = -\Delta x && \phi = \frac {3\pi} 2 \\
+\end{cases} 
+$$
 
 
 ---

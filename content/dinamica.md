@@ -118,13 +118,17 @@ $$\vec F = \frac {d\vec p}{dt}$$
 ##### 2) Un proiettile sta procedendo parallelamente al suolo, la sua quota è invariata e la sua velocità diminuisce; si commenti la situazione con la 2° legge della dinamica
 <br>
 Se il proiettile sta proseguendo parallelamente al suolo, mantenendo quota costande, ma con velocità in diminuzione, significa che il corpo ha un'accelerazione opposta al vettore velocità.
-Questo significa che la risultante delle forze è anchessa opposta al moto ma con ugual direzione. 
+
+Per la seconda legge della dinamica:
 
 $$
-\vec R = m\frac {d\vec v}{dt}
+\vec R = m\vec a=m\frac {d\vec v}{dt}
 $$
 
-Ho parlato di __risultante__ perché ipotizzando che ci troviamo sulla terra, sappiamo che sul corpo esercita la forza peso ($m\vec g$), ma non perdendo quotà questa è bilanciata da qualche altra forza. Oppure il corpo ha una velocità tale che si trova in orbita.
+Questo significa che la risultante delle forze agenti sul corpo ha la stessa direzione del moto ma con verso opposto e modulo proporzionale alla decelerazione. 
+
+Poiché il proiettile non perde quota, la forza peso $m\vec g$ deve essere bilanciata da un'altra forza con componente verticale uguale e contraria.
+
 
 ---
 

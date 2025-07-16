@@ -146,7 +146,40 @@ $$\alpha = \frac {d \omega}{dt} = \frac 1 R\frac {dv}{dt} = \frac {a_T}R$$
 
 ---
 ## Moto parabolico
-- TODO
+Il moto parabolico avviene quando un punto viene lanciato con una velocità iniziale $\vec v_0$ avente un angolo $\theta$ con il suolo (detto __angolo di alzo__).
+
+Di questo moto si vogliono conoscere la __traiettoria__, la __massima altezza__ e la __gittata__ che è la distanza orrizontale dal punto in cui viene lanciato al punto in cui cade al suolo.
+
+Dal momento in cui il punto è stato lanciato esso avrà un'accelerazione di gravità $g = 9.81\,m/s^2$ e considerando un sistema di riferimento con $y$ che punta verso l'alto e $x$ concorde al suolo avremo che 
+
+$$\vec g = -g\cdot \hat u_y$$
+
+Si possono quindi scomporre velocità e accelerazione rispetto agli assi $x$ e $y$.
+$$
+\begin{cases}
+x(t) = v_0\cdot \cos (\theta) t\\
+y(t) = v_0\cdot \sin (\theta) t - \frac 12 gt^2 \\
+\end{cases}
+$$
+
+Per trovare la traiettoria eliminiamo il tempo nelle due espressioni con
+$$t=\frac x{v_0\cos \theta}$$
+
+$$y(x) = x\tan \theta - x^2\frac {g}{2v_0^2\cos^2\theta}$$
+
+Che è l'equazione di una __parabola__.
+
+Per calcolare la __gittata__ basta porre $y(x) = 0$ e otteniamo due soluzioni, scartiamo quella $x=0$ che corrisponde all'inizio della traiettoria e ricordando la formula di duplicazione $\sin(2\phi) = 2 \sin \phi \cos \phi$ otteniamo
+$$0 = \cancel x(\tan \theta - x \frac {g}{2v_0^2 \cos^2 \theta})$$
+$$x_G = \frac {v_0^2\sin (2\theta)}g$$
+
+Ottenuta la gittata possiamo calcolare l'__altezza massima__ sapendo che la parabola è simmetrica e quindi $x_M = \frac{x_G}2$
+
+$$y(x_M) = \frac {2v_0^2\cos\theta\sin \theta}{2g} \tan \theta - \bigg(\frac {2v_0^2\cos\theta\sin \theta}{2g} \bigg)^2\frac g {2v_0^2cos^2\theta}$$
+$$= \frac{2v_0^2\sin^2\theta}{2g}-  \frac {2v_0^2\sin^2 \theta}{4g} = y_M = \frac {v^2_0\sin^2\theta}{2g}$$
+
+### todo
+- angolo di lancio con gittata maggiore (hint: $\frac {dx_G}{d\theta}$)
 
 ---
 ## Decomposizione delle accelerazioni nei moti piani.

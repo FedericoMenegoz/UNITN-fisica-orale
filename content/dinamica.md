@@ -109,7 +109,9 @@ $$\vec F = \frac {d\vec p}{dt}$$
 
 
 - todo: definizione impulso da $\vec Fdt =d\vec p$ 
+
 <br>
+
 ---
 <br>
 

@@ -4,7 +4,48 @@ counter: 0
 ---
 # Dinamica
 ## Secondo principio della dinamica 
-Gurda [risposta](#1-si-enunci-e-si-commenti-la-seconda-legge-della-dinamica-unità-di-misura-sono-grandezze-scalari-o-vettoriali).
+La seconda legge della dinamica detta anche __seconda legge di Newton__ è definita come
+
+$$\vec F = m \vec a = m\frac{d\vec v}{dt} = m \frac {d^2 \vec s}{dt^2}$$
+
+La __forza__ è una grandezza vettoriale e la sua unità di misura è il __Newton__:
+
+$$[N] = \bigg[kg\frac m{s^2} \bigg]$$
+
+>L'interazione del punto con l'ambiente circostante, espresso tramite la __forza__ $\vec F$, determina l'accelerazione del punto, ovvero la variazione della sua velocità nel tempo, secondo un fattore di proporzionalità $m$ che è la __massa inerziale__ del corpo.
+
+Si dice __massa inerziale__ perché esprime l'inerzia del corpo, cioè la sua resistenza a variare il suo stato di moto, cioè a modificare la sua velocità in modulo, direzione o verso.
+
+Ricordando le che il [prodotto](vettori.md#prodotto-tra-un-vettore-ed-uno-scalare) tra uno scalare e un vettore, mantiene la direzione del vettore, e che la massa è sempre positiva, la forza avrà la stessa direzione e verso dell'accelerazione.
+
+Definita la quantità di moto come 
+
+$$\vec p = m\vec v$$
+
+allora un'altra formulazione più generale della seconda legge di Newton
+
+$$\vec F = \frac {d\vec p}{dt}$$
+
+>L'azione di una __forza__ determina la variazione nel tempo della quantità di moto, ovvero di qualcuna o di tutte queste quantità: __massa__ del corpo, __direzione__, __verso__, __modulo__ della velocità.
+
+### Impulso
+
+Assumendo la massa costante dalla definizione di quantità di moto:
+
+$$\vec F = \frac {d\vec p}{dt} = m\frac {d\vec v }{dt} $$
+
+Si definisce l'impulso come:
+
+$$\vec P = \int_{t_0}^{t} \vec F(t)dt = m\int _{v_0}^v dv = p - p_0$$
+
+Questa formulazione (__forma integrale della seconda legge di Newton__) ci dice qual'è l'effetto complessivo della forza in un tempo finito.
+
+Solitamente la __forza__ è in funzione del tempo, quindi non possiamo integrarla, ma applicando il teorema della media integrale possiamo calcolare il valore medio della forza:
+
+$$\vec F_m = \frac {\Delta \vec p}{t-t_0}$$
+
+> Quando $\vec F$ è nulla anche $\Delta \vec p = 0$ perciò $\vec p = cost$ e vale il principio di conservazione del moto:
+> - in assenza di forze applicate la quantità di moto di un punto materiale rimane costante, ovvero si conserva
 
 ---
 ## Terza legge di Newton (principio di azione e reazione)
@@ -163,38 +204,10 @@ Quindi la tensione del filo sarà massima con $\theta = 0$ e sarà minima nel pu
 ## Domande
 {% assign counter = page.counter | plus: 1 %}
 ##### {{ counter }}) Si enunci e si commenti la seconda legge della dinamica. Unità di misura? Sono grandezze scalari o vettoriali?
-
-La seconda legge della dinamica detta anche __seconda legge di Newton__ è definita come
-
-$$\vec F = m \vec a = m\frac{d\vec v}{dt} = m \frac {d^2 \vec s}{dt^2}$$
-
-La __forza__ è una grandezza vettoriale e la sua unità di misura è il __Newton__:
-
-$$[N] = \bigg[kg\frac m{s^2} \bigg]$$
-
->L'interazione del punto con l'ambiente circostante, espresso tramite la __forza__ $\vec F$, determina l'accelerazione del punto, ovvero la variazione della sua velocità nel tempo, secondo un fattore di proporzionalità $m$ che è la __massa inerziale__ del corpo.
-
-Si dice __massa inerziale__ perché esprime l'inerzia del corpo, cioè la sua resistenza a variare il suo stato di moto, cioè a modificare la sua velocità in modulo, direzione o verso.
-
-Ricordando le che il [prodotto](vettori.md#prodotto-tra-un-vettore-ed-uno-scalare) tra uno scalare e un vettore, mantiene la direzione del vettore, e che la massa è sempre positiva, la forza avrà la stessa direzione e verso dell'accelerazione.
-
-Definita la quantità di moto come 
-
-$$\vec p = m\vec v$$
-
-allora un'altra formulazione più generale della seconda legge di Newton
-
-$$\vec F = \frac {d\vec p}{dt}$$
-
->L'azione di una __forza__ determina la variazione nel tempo della quantità di moto, ovvero di qualcuna o di tutte queste quantità: __massa__ del corpo, __direzione__, __verso__, __modulo__ della velocità.
-
-
-- todo: definizione impulso da $\vec Fdt =d\vec p$ 
-
-<br>
+Guarda [la seconda legge di Newton](#secondo-principio-della-dinamica).
 
 ---
-<br>
+
 
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Un proiettile sta procedendo parallelamente al suolo, la sua quota è invariata e la sua velocità diminuisce; si commenti la situazione con la 2° legge della dinamica

@@ -41,7 +41,7 @@ L'accelerazione si ottiene con un ulteriore derivazione:
 
 $$a(t) = -\omega ^2 A \sin (\omega t + \phi) = -\omega ^2 x(t)$$
 
-<img alt="diagrammi orari moto armonico" src="../imgs/Cinematica-00_ArmonicoGrafiOrari.png" width="650" height="550">
+<img alt="diagrammi orari moto armonico" src="../imgs/cinematica-00_ArmonicoGrafiOrari.png" width="650" height="550">
 <br>
 Una condizione sufficiente affinché un moto sia armonico è che l'accelerazione del corpo sia proporzionale e di verso opposto allo spostamento rispetto alla posizione di equilibrio, indicando la presenza di una forza di richiamo (o forza restauratrice) che tende a riportare il corpo verso tale posizione.
 

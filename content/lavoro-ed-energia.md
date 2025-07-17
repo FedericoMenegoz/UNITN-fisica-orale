@@ -129,7 +129,19 @@ $$
 
 Invertendo il senso di percorrenza da $f$ a $i$, il lavoro compiuto è lo stesso in modulo, ma di segno opposto.
 
->Questo significa che lungo un qualsiasi percorso chiuso il lavoro delle forze conservative è nullo.
+>Un altra definizione per le __forze conservative__ é che lungo un qualsiasi percorso chiuso il loro lavoro è nullo.
+>
+>$$ \oint \vec F d\vec s = 0$$
+>
+>Scegliando arbitrariamente due punti $i$ e $f$ all'interno del percorso chiuso:
+>
+>$$ 
+>\oint  \vec F d\vec s = 
+>\int_i^f (\vec F d\vec s)_I + \int_f^i (\vec F d\vec s)_{II} =  
+>\int_i^f (\vec F d\vec s)_{I} - \int_i^f (\vec F d\vec s)_{II} = 0
+>$$
+>
+>$$ \Rightarrow \int_i^f (\vec F d\vec s)_{I} = \int_i^f (\vec F d\vec s)_{II} $$
 
 ## Forze non conservative (attrito radente)
 Il lavoro della forza di attrito radente è dato:
@@ -137,6 +149,7 @@ Il lavoro della forza di attrito radente è dato:
 $$
 W = \int_i^f \vec F_a \cdot d\vec s = -\mu_d \int _i^f N\hat u_v\cdot  d\vec s
 $$
+
 
 con $\hat u_v$ versore della velocità (la forza d'attrito è sempre contraria al moto del corpo) e nel caso la reazione vincolare $N$ sia costante:
 
@@ -150,6 +163,35 @@ Con $s_{i\rightarrow f}$ è la lunghezza del percorso, misurata lungo l'effettiv
 > Inoltre il lavoro della forza attrito è sempre negativo.
 
 ## Energia potenziale
+
+Il lavoro delle forze conservative dipende solo dalle posizioni iniziali e finali, quindi fissata una posizione di riferimento $O$ e considerando due posizioni $i$ e $f$:
+
+$$
+W_{O\rightarrow O} = W_{Oi} + W_{if} + W_{fO} = 0
+$$
+
+Perché appunto un percorso chiuso e quindi possiamo ricavarci:
+
+$$
+W_{if} = - W_{Oi} - W_{fO} = - W_{Oi} + W_{Of} 
+$$
+
+> Quindi definiamo come __energia potenziale__:
+>
+> $$
+> U_P = - W_{OP} 
+> $$
+>
+> Da cui possiamo quindi calcolare 
+>
+> $$W_{i\rightarrow f} = - (U_f - U_i)$$
+> - __L'energia potenziale è la "primitiva" della forza__
+> - __Il lavoro è la differenza di energia potenziale tra due punti__
+> - $$U(\vec x_p) = - \int_O^P \vec F \cdot d\vec s$$
+
+Da notare che l'energia potenziale in un punto di per se non ha molto senso poiché dipende dalla scelta di $O$, ma ha senso parlare di differenza di energia potenziale che non dipende dalla scelta del riferimento.
+
+
 
 ## Enerigia Meccanica e Teorema di conservazione dell'energia meccanica
 ## Teorema delle forze vive (energia cinetica)

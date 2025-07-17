@@ -2,7 +2,7 @@
 1. [vettori](./content/vettori.md)
 2. [cinematica](./content/cinematica.md)
 3. [dinamica](./content/dinamica.md)
-4. [lavoro ed enerigia](./content/lavoro-ed-energia.md)
+4. [lavoro ed energia](./content/lavoro-ed-energia.md)
 5. [forza gravitazionale](./content/forza-gravitazionale.md)
 6. [urti](./content/urti.md)
 7. [sistemi di punti materiali](./content/sistemi-punti-materiali.md)

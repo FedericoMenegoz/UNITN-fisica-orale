@@ -429,7 +429,7 @@ Nei sistemi isolati, cioè nei sistemi in cui le forze esterne sono nulle o la l
 Se lanciamo una mela e poi la riprendiamo, considerando il sistema mela, notiamo che la quantità di moto non si conserva:
 - $p_i = m_{mela} \cdot 0 = 0$
 - $p_{up} = m_{mela}\cdot v_{up} \ne 0$
-- $p_{down} = m_{mela}\cdot v_{down} \ne 0$ e inoltre essendo $v_{up} = v_{down}$ abbiamo che $p_{up} \ne p_{down}$
+- $p_{down} = m_{mela}\cdot v_{down} \ne 0$ e inoltre essendo $v_{up} = -v_{down}$ abbiamo che $p_{up} \ne p_{down}$
 
 In realtà la quantità di moto del sistema mela cambia in continuazione, poiché sappiamo che la velocità di lancio diminuisce fino ad invertire segno ed aumentare in modulo fino a che non la riprendiamo in mano.
 

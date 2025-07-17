@@ -6,9 +6,13 @@ counter: 0
 ## Secondo principio della dinamica 
 La seconda legge della dinamica detta anche __seconda legge di Newton__ è definita come
 
-$$\vec F = m \vec a = m\frac{d\vec v}{dt} = m \frac {d^2 \vec s}{dt^2}$$
+$$\vec F = m \vec a = m\frac{d\vec v}{dt} = m \frac {d^2 \vec r}{dt^2}$$
 
-La __forza__ è una grandezza vettoriale e la sua unità di misura è il __Newton__:
+1. Questa è una __legge vettoriale__ che significa che essa equivale a tre equazioni relative ai tre moti proiettati sugli assi cartesiani
+2. Questa legge è un equazione differenziale tra $\vec F$ e $\vec v$ o tra $\vec F$ e $\vec r$
+3. Questa legge vale sono se il moto è studiato all'interno di un sistema di __riferimento inerziale__ e la velocità del moto è molto minore rispetto a quella della luce $c = 3\cdot 10^8 \frac ms$
+
+L'unità di misura è il __newton__:
 
 $$[N] = \bigg[kg\frac m{s^2} \bigg]$$
 
@@ -18,7 +22,7 @@ Si dice __massa inerziale__ perché esprime l'inerzia del corpo, cioè la sua re
 
 Ricordando le che il [prodotto](vettori.md#prodotto-tra-un-vettore-ed-uno-scalare) tra uno scalare e un vettore, mantiene la direzione del vettore, e che la massa è sempre positiva, la forza avrà la stessa direzione e verso dell'accelerazione.
 
-Definita la quantità di moto come 
+Definita la quantità di moto come:
 
 $$\vec p = m\vec v$$
 
@@ -46,6 +50,10 @@ $$\vec F_m = \frac {\Delta \vec p}{t-t_0}$$
 
 > Quando $\vec F$ è nulla anche $\Delta \vec p = 0$ perciò $\vec p = cost$ e vale il principio di conservazione del moto:
 > - in assenza di forze applicate la quantità di moto di un punto materiale rimane costante, ovvero si conserva
+
+Unità di misura della quantità di moto e impulso è __newton per secondo__:
+
+$$\bigg[kg \frac m s\bigg] = \bigg[\bigg(kg \frac m {s^2}\bigg)s\bigg] = \big[ N \cdot s\big] $$
 
 ---
 ## Terza legge di Newton (principio di azione e reazione)
@@ -93,6 +101,30 @@ In natura eliminare l'attrito per due materiali in contatto è impossibile, per 
 
 ---
 ## Tensione e Carrucola
+
+### Fune inestensibile
+Si prenda una fune inestensibile e di massa trascurabile (__fune ideale__). Questa fune quando tesa esercita una __tensione__.
+
+###### a) Fune tesa in stato di quiete
+Si consideri una fune tesa in equilibrio statico e analizziamo un elemento infinitesimo $ds$ della fune.
+
+Le estremità _vengono tirate_ dalle pareti restanti del filo e le forze saranno uguali e contrarie perché siamo in uno stato di equilibrio. Questo vale per qualsiasi pezzettino della fune e il valore della tensione sarà lo stesso in ogni parte del filo, altrimenti la fune non sarebbe in equilibrio statico.
+
+###### b) Fune tesa in movimento
+Si consideri ora una funa in cui le estremità sono collegate a due punti materiali <span class="color">a</span> e <span class="color">b</span> che esercitano due forze $\vec F_a$ e $\vec F_b$ con stessa direzione, verso opposto e di modulo $F_a > F_b$.
+
+Allora avendo assunto che la fune è inestensibile ogni suo elemento si muoverà con la stessa accelerazione, e analogamente anche i due punti materiali <span class="color">a</span> e <span class="color">b</span> avranno la stessa accelerazione.
+
+Quindi se applichiamo la seconda legge di Newton otteniamo che:
+
+$$T_a - T_b = m_f\cdot a$$
+
+Ma l'ipotesi che $m_f$ sia trascurabile fa sì che $m_f\cdot a=0$ quindi le due forze agenti su ogni elemento della funa sono uguali e contrarie.
+
+### Carrucole
+Non è necessario che la fune sia completamente rettilinea, la fune può scorrere attorno ad un perno, __carrucola__ allo scopo di cambiare la direzione della forza.
+
+Si vede facilmente che le tensioni del filo andranno a bilanciare la reazione vincolare del perno. (todo disegno)
 
 ---
 ## Forza elastica
@@ -353,32 +385,83 @@ Quindi in questo caso la bilancia misura correttamente il peso reale e la massa 
 
 ---
 {% assign counter = counter | plus: 1 %}
-##### {{ counter }}) Terzo principio della dinamica. Se considero un sistema che prevede delle forze di reazione, mi fanno escludere a priori che il sistema sia isolato, oppure non è vero? La legge vale sempre? Quando un sistema si dice isolato?
-
-
----
-{% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Funi inestensibili.
-
+Vedi [tensione fili](#fune-inestensibile)
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Appendiamo una molla al soffitto con a un estremo un corpo di massa m.
-
+Vedi [qui](#-counter--appendiamo-un-corpo-al-soffitto-con-una-molla-cosa-succede).
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }})  Forza di attrito statico.
-
+Vedi [forza d'attrito statico](#forza-dattrito-statico).
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Cos’è la quantità di moto?
+La quantità di moto è definità come: 
 
+$$\vec p = m \vec v$$
+
+La quantità di moto è una grandezza vettoriale quindi ha le sue componenti sugli assi:
+
+$$
+\begin{cases}
+    p_x = m v_x \\
+    p_y = m v_y \\
+    p_z = m v_z \\
+\end{cases}
+$$
+
+Possiamo riscrivere la seconda legge di Newton in maniera più generale considerando anche i casi in cui la massa non è costante come:
+
+$$
+\vec F = \frac {d\vec p}{dt}
+$$
+
+Nei sistemi isolati, cioè nei sistemi in cui le forze esterne sono nulle o la loro risultante è nulla allora la quantità di moto interna al sistema si conserva.
+
+###### ESEMPIO
+<div class="esempio" markdown="1">
+
+Se lanciamo una mela e poi la riprendiamo, considerando il sistema mela, notiamo che la quantità di moto non si conserva:
+- $p_i = m_{mela} \cdot 0 = 0$
+- $p_{up} = m_{mela}\cdot v_{up} \ne 0$
+- $p_{down} = m_{mela}\cdot v_{down} \ne 0$ e inoltre essendo $v_{up} = v_{down}$ abbiamo che $p_{up} \ne p_{down}$
+
+In realtà la quantità di moto del sistema mela cambia in continuazione, poiché sappiamo che la velocità di lancio diminuisce fino ad invertire segno ed aumentare in modulo fino a che non la riprendiamo in mano.
+
+La quantità di moto non si conserva perché il sistema mela non è isolato, su di esso viene esercitata la forza di gravità della Terra.
+
+Includiamo la Terra nel sistema: in questo caso la quantità di moto si conserva. Quando lanciamo la mela verso l'alto, la quantità di moto della mela $\vec p_{mela}$ verrà bilanciata esattamente da quella della Terra $\vec p_{\tiny {Terra}}$ in modo che:
+
+$$
+\vec p_i = \vec 0 = \vec p_{mela} + \vec p_{\tiny {Terra}} \quad \Rightarrow \quad p_{mela} = -p_{\tiny {Terra}}
+$$
+
+Essendo però la massa della Terra enormemente maggiore di quella della mela $m_{Terra} \gg m_{mela}$, la velocità con cui si muove la Terra sarà piccolissima $v_{Terra} = \frac{m_{mela}}{m_{Terra}} v_{mela}$.
+
+</div>
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }})  Ha a disposizione una bilancia, come può misurare il tempo sapendo solo massa e lunghezza. _hint moto armonico del pendolo_
+
+In realtà per misurare il periodo $T$ del pendolo, non abbiamo bisogno di conoscere la massa.
+
+$$
+T = \frac {2\pi} \omega
+$$
+
+con 
+
+$$
+\omega = \sqrt {\frac g l}
+$$
+
+Quindi ci basta conoscere la lunghezza del filo per poter calcolare il periodo del pendolo.
 
 
 ---

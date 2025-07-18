@@ -65,7 +65,9 @@ $$
 
 In cui la quantità $\frac 12 m v^2$ prende il nome di energia cinetica.
 
-> Il teorema dell'energia cinetica afferma che:
+<a id="teorema-energia-cinetica"></a>
+
+> Il __teorema__ dell'energia cinetica (__teorema delle forze vive__) afferma che:
 >
 >il lavoro compiuto dalla risultante delle forza di un punto material da una posizione _iniziale_ ad una posizione _finale_ è uguale alla variazione di __energia cinetica__ del punto materiale in quel tragitto
 
@@ -183,54 +185,109 @@ $$
 > $$
 >
 > Da cui possiamo quindi calcolare 
->
 > $$W_{i\rightarrow f} = - (U_f - U_i)$$
-> - __L'energia potenziale è la "primitiva" della forza__
-> - __Il lavoro è la differenza di energia potenziale tra due punti__
-> - $$U(\vec x_p) = - \int_O^P \vec F \cdot d\vec s$$
+>
+> PROPRIETÀ:
+> - l'energia potenziale può essere definita solo per le __forze conservative__
+> - per tutte le forze conservative il lavoro si esprime come l'opposto della variazione di energia potenziale 
+> - l'espressione per l'energia potenziale dipende dal tipo di forza e si ricava da
+> $$U(\vec x_p) = - \int_O^P \vec F \cdot d\vec s$$
+> - l'energia potenziale è la __primitiva__ della forza
 
 Da notare che l'energia potenziale in un punto di per se non ha molto senso poiché dipende dalla scelta di $O$, ma ha senso parlare di differenza di energia potenziale che non dipende dalla scelta del riferimento.
 
 
 
 ## Enerigia Meccanica e Teorema di conservazione dell'energia meccanica
-## Teorema delle forze vive (energia cinetica)
+Se agiscono solo forze conservative allora sono valide:
 
+$$
+\begin{cases}
+W  =  E_{k, f} - E_{k, i} && \footnotesize\mathtt{Energia\;Cinetica}\\ 
+\\
+W = U(\vec x_i) - U(\vec x_f) && \footnotesize\mathtt{Energia\;Potenziale}\\ 
+\end{cases}
+$$
+Eguagliando le due relazioni si ottiene: 
+
+$$
+E_{k, i} + U(\vec x_i) = E_{k, f} + U(\vec x_f)
+$$
+
+>Tale somma si chiama __energia meccanica__ e tale uguaglianza esprime il __principio di conservazione dell'energia meccanica__:
+> - in presenza di forze conservative l'energia meccanica di un punto materiale si conserva:
+>
+> $$E_m = E_k + U = cost$$
+
+In generale non agiscono mai solo forze conservative, ma c'è sempre qualche forza non conservativa in gioco (attriti vari ...) quindi l'energia meccanica non è mai costante.
+
+
+<a id="conservazione-energia-meccanica-fnc"></a>
+
+> In presenza di forze non conservative l'energia meccanica non resta costante e la sua variazione è uguale al lavoro delle forze non conservative:
+>
+> $$W_{nc} = E_{m, i} - E_{m, f}$$
+
+---
 ## Domande
 
 {% assign counter = page.counter | plus: 1 %}
 ##### {{ counter }}) Parla della conservazione dell’energia meccanica.
+Vedi l'[energia meccanica](#enerigia-meccanica-e-teorema-di-conservazione-dellenergia-meccanica).
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Forze conservative. Esempi di forze conservative e non conservative.
+- [forze conservative](#forze-conservative)
+- [forze non conservative](#forze-non-conservative-attrito-radente)
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Definisci energia potenziale (in generale)
+Vedi l'[energia potenziale](#energia-potenziale).
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Cosa sono le forze dissipative? Che ruolo hanno nel teorema generale della conservazione dell’energia meccanica?
+Per forza dissipative si intendono le [forze non conservative](#forze-non-conservative-attrito-radente), quindi che il lavoro su un percorso chiuso non è nullo:
+
+$$\oint \vec F_{nc}\cdot d\vec s \ne 0 $$
+
+Queste forze trasformano una parte dell'energia meccanica in altri tipi di energia, tipicamente energia termica.
 
 ---
-{% assign counter = counter | plus: 1 %}
-##### {{ counter }}) Definizione di energia potenziale (generale).
 
----
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) definizione di energia potenziale. Cos’è una forza conservativa. Esempi di forze conservative.
+- [energia potenziale](#energia-potenziale)
+- [forze conservative](#forze-conservative)
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }})  Si definisca il lavoro. Analisi dimensionale e senso fisico. Significato del prodotto scalare.
 
+- [lavoro](#lavoro)
+
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Ho una pallina che cade (in acqua? su un pavimento?) e dopo un po’ si ferma. Cosa è successo? Se volessimo scrivere un bilancio energetico?
+
+- todo (va introdotto il caso dell'urto con il pavimento?)
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Si enunci il principio di conservazione dell’energia meccanica, nella maniera più generale consosciuta.
 
+- [lavoro forze non conservative e energia meccanica](#conservazione-energia-meccanica-fnc) 
+
+$$
+E_{m,i} = E_{m_f} + W_{nc}
+$$
+
+---
+{% assign counter = counter | plus: 1 %}
+##### {{ counter }}) Teorema delle forze vive?
+- [teorema energia cinetica](#teorema-energia-cinetica)
+
+---
 

@@ -73,11 +73,11 @@ In questo scenario l’unica forza che agisce sul corpo è la gravità. Siamo in
 
 Anche un corpo in orbita è in caduta libera continua, ma con una velocità tangenziale sufficiente a evitare una caduta verticale ed un incontro molto spiacevole con il suolo terrestre. 
 
-Al momento del contatto con il suolo, subiremo una decelerazione quasi istantanea, che ci farebbe percepire un peso molto maggiore (se fosse possibile percepire durante l'urto). In un certo senso, "__recupereremmo__" tutto il _peso perso_ durante la caduta.
+Spiacevole perché nel momento del contatto con il suolo, subiremo una decelerazione quasi istantanea, che ci farebbe percepire un peso molto maggiore. In un certo senso, "__recupereremmo__" tutto il peso perso durante la caduta.
 
 ###### ESEMPIO (mezzo fuori tema)
 
-<div class="esempio">
+<div class="esempio" markdown=1>
 
 Per esempio, se all'interno di una scatola fossimo in caduta libera da un'altezza di:
 
@@ -87,7 +87,7 @@ arriveremo al suolo con una velocità:
 
 $$v = \sqrt {2gh} = 44.3 \;m/s $$
 
-supponiamo che al momento dell'impatto ci fermiamo in un tempo di
+e supponiamo che al momento dell'impatto ci fermiamo in un tempo di
 
 $$
 t_{impatto} = 0.2 s
@@ -98,11 +98,14 @@ allora la decelerazione media durante l'urto sarebbe:
 $$
 \overline a_{impatto} = \frac{44.3}{0.2} = 221.4 \;\frac m {s^2}
 $$
+
 quindi il peso apparente in quei $0.2$ secondi sarebbe:
+
 $$
 P = m(\overline a_{impatto} + g) \eqsim m\cdot  230\ \; N
 $$
-Quindi peseremmo circa __23 volte in più__: per una persona di $80\;kg$ una bilancia segnerebbe $1840\;kg$.
+
+Quindi peseremmo circa __23 volte__ in più: per una persona di $80\;kg$ una bilancia segnerebbe $1840\;kg$.
 
 Facendo gli stessi calcoli, dalla stazione spaziale con un altezza $h\simeq 4 \cdot 10^5 \;m$ la bilagna segnerebbe circa $112'000 \;kg$ durante l'impatto!!
 
@@ -115,15 +118,74 @@ Vedi [sopra](#-counter--se-fossimo-in-orbita-ma-poi-siamo-fermi-e-ci-lasciano-ca
 
 ---
 {% assign counter = counter | plus: 1 %}
-##### {{ counter }}) Legge di gravitazione universale. Se ho in un cesto quattro laptop in un cesto e quattro laptop in un altro cesto, e sposto due laptop nell’altro cesto, come cambia la forza?
+##### {{ counter }}) Legge di gravitazione universale. Se ho quattro laptop in un cesto e quattro laptop in un altro cesto, e sposto due laptop nell’altro cesto, come cambia la forza?
 
-- todo
+La massa iniziale dei due cesti $m_i$ sarà la somma di 4 laptop $m_l$:
+
+$$
+m_{i} = 4\cdot m_{l}
+$$
+
+Quindi la forza che esercitano tra loro in modulo:
+
+$$
+F_i = \gamma \frac {m_{i}^2}{d^2} = \gamma \frac {16\cdot m_{l}^2}{d^2}
+$$
+
+Dopo aver spostato due laptop da una cesta all'altra la forza sarà:
+
+$$
+F_f = -\gamma \frac {6\cdot m_{l}\cdot 2 \cdot m_{l}}{d^2} = -\gamma \frac {12\cdot m_{l}^2}{d^2}
+$$
+
+$$
+F_f = \frac{12}{16}\cdot F_i \quad F_f = \frac 34 \cdot F_i
+$$
+
+Quindi la forza gravitazionale finale sarà tre quarti rispetto a quella iniziale.
 
 ---
 {% assign counter = counter | plus: 1 %}
-##### {{ counter }}) Energia potenziale gravitazionale. Ragionamento molto lungo su questo.
+##### {{ counter }}) Energia potenziale gravitazionale. [forse extra]
 
-- todo
+Il lavoro per la forza gravitazionale secondo la definizione di lavoro:
+
+$$
+dW = \vec F_{1,2} \cdot d\vec s = -\gamma \frac {m_1\,m_2}{r^2} \hat r \cdot d\vec s
+$$
+
+Se andiamo a considerare il caso in cui $m_2$ si allontani da $m_1$ lungo la direzione che li congiunge andando a finire ad una distanza $r_f > r_i$, allora la forza gravitazionale avrà esercitato un lavoro negativo. Inoltre essendo lo spostamento collineare con la retta che congiunge le due masse il prodotto scalare:
+
+$$
+\hat r\cdot d\vec s = dr
+$$
+
+Se invece consideriamo il caso in cui $m_2$ orbiti seguendo una traiettoria perfettamente circolare: allora la distanza tra le masse rimarrebbe costante e il prodotto scalare tra $\hat r$ e $d\vec s$ diventerebbe nullo:
+
+$$
+\hat r \cdot d \vec s = 0 \quad \mathtt{perché} \quad \hat r \perp d\vec s
+$$
+
+Quindi pensando ad un orbita ellittica il lavoro della forza gravitazionale sarà funzione della distanza radiale, quindi non dipenderà dal percorso e perciò la forza gravitazionale è una __forza conservativa__.
+
+Il lavoro sarà definito come:
+
+$$
+W_{i\rightarrow f} = \int_i^f -\gamma\frac {m_1\,m_2}{r^2} dr = -\gamma \,m_1\,m_2 \int_i^f \frac 1{r^2}dr =  -\gamma \,m_1\,m_2 \bigg(-\frac 1 {r_f} - \bigg[-\frac 1 {r_i}\bigg]\bigg) = \cdots
+$$
+
+$$
+\cdots = \gamma\frac {m_1\,m_2}{r_f} - \gamma\frac {m_1\,m_2}{r_i} = -\Delta U
+$$
+
+
+Quindi l'energia potenziale sarà:
+
+$$
+U(\vec r) = -\gamma \frac {m_1\,m_2}r
+$$
+
+###### TODO aggiungere ragionamento con il sistema di riferimento polare?
 
 ---
 

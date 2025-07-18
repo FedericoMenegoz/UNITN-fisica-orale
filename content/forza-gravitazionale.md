@@ -69,18 +69,62 @@ Vedi [qui](#massa-inerziale-gravitazionale).
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Se fossimo in orbita, ma poi siamo fermi e ci lasciano cadere verso la terra dentro uno scatolone, avremmo una sensazione del peso?
 
+In questo scenario l’unica forza che agisce sul corpo è la gravità. Siamo in __caduta libera__, quindi il nostro eventuale contatto con la base della scatola non eserciterebbe su di noi la reazione vincolare che sperimentiamo normalmente sul suolo terrestre. Per questo, durante la caduta libera non percepiamo alcuna __sensazione di peso__.
+
+Anche un corpo in orbita è in caduta libera continua, ma con una velocità tangenziale sufficiente a evitare una caduta verticale ed un incontro molto spiacevole con il suolo terrestre. 
+
+Al momento del contatto con il suolo, subiremo una decelerazione quasi istantanea, che ci farebbe percepire un peso molto maggiore (se fosse possibile percepire durante l'urto). In un certo senso, "__recupereremmo__" tutto il _peso perso_ durante la caduta.
+
+###### ESEMPIO (mezzo fuori tema)
+
+<div class="esempio">
+
+Per esempio, se all'interno di una scatola fossimo in caduta libera da un'altezza di:
+
+$$h = 100\,m$$
+
+arriveremo al suolo con una velocità:
+
+$$v = \sqrt {2gh} = 44.3 \;m/s $$
+
+supponiamo che al momento dell'impatto ci fermiamo in un tempo di
+
+$$
+t_{impatto} = 0.2 s
+$$
+
+allora la decelerazione media durante l'urto sarebbe:
+
+$$
+\overline a_{impatto} = \frac{44.3}{0.2} = 221.4 \;\frac m {s^2}
+$$
+quindi il peso apparente in quei $0.2$ secondi sarebbe:
+$$
+P = m(\overline a_{impatto} + g) \eqsim m\cdot  230\ \; N
+$$
+Quindi peseremmo circa __23 volte in più__: per una persona di $80\;kg$ una bilancia segnerebbe $1840\;kg$.
+
+Facendo gli stessi calcoli, dalla stazione spaziale con un altezza $h\simeq 4 \cdot 10^5 \;m$ la bilagna segnerebbe circa $112'000 \;kg$ durante l'impatto!!
+
+</div>
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Ci lanciano da un’astronave verso la terra dentro uno scatolone chiuso. Si avvertono variazioni nella propria sensazione di peso?
+Vedi [sopra](#-counter--se-fossimo-in-orbita-ma-poi-siamo-fermi-e-ci-lasciano-cadere-verso-la-terra-dentro-uno-scatolone-avremmo-una-sensazione-del-peso).
 
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Legge di gravitazione universale. Se ho in un cesto quattro laptop in un cesto e quattro laptop in un altro cesto, e sposto due laptop nell’altro cesto, come cambia la forza?
 
+- todo
+
 ---
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Energia potenziale gravitazionale. Ragionamento molto lungo su questo.
 
+- todo
+
+---
 
 

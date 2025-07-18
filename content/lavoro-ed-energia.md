@@ -203,11 +203,12 @@ Se agiscono solo forze conservative allora sono valide:
 
 $$
 \begin{cases}
-W  =  E_{k, f} - E_{k, i} && \footnotesize\mathtt{Energia\;Cinetica}\\ 
+W  =  E_{k, f} - E_{k, i} && \small\mathtt{Energia\;Cinetica}\\ 
 \\
-W = U(\vec x_i) - U(\vec x_f) && \footnotesize\mathtt{Energia\;Potenziale}\\ 
+W = U(\vec x_i) - U(\vec x_f) && \small\mathtt{Energia\;Potenziale}\\ 
 \end{cases}
 $$
+
 Eguagliando le due relazioni si ottiene: 
 
 $$
@@ -215,7 +216,7 @@ E_{k, i} + U(\vec x_i) = E_{k, f} + U(\vec x_f)
 $$
 
 >Tale somma si chiama __energia meccanica__ e tale uguaglianza esprime il __principio di conservazione dell'energia meccanica__:
-> - in presenza di forze conservative l'energia meccanica di un punto materiale si conserva:
+> - in un sistema isolato e in presenza di sole forze conservative l'energia meccanica di un punto materiale si conserva:
 >
 > $$E_m = E_k + U = cost$$
 

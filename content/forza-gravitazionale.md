@@ -148,41 +148,51 @@ Quindi la forza gravitazionale finale sarà tre quarti rispetto a quella inizial
 {% assign counter = counter | plus: 1 %}
 ##### {{ counter }}) Energia potenziale gravitazionale. [forse extra]
 
-Il lavoro per la forza gravitazionale secondo la definizione di lavoro:
+Il lavoro per la forza gravitazionale secondo la definizione:
 
 $$
 dW = \vec F_{1,2} \cdot d\vec s = -\gamma \frac {m_1\,m_2}{r^2} \hat r \cdot d\vec s
 $$
 
-Se andiamo a considerare il caso in cui $m_2$ si allontani da $m_1$ lungo la direzione che li congiunge andando a finire ad una distanza $r_f > r_i$, allora la forza gravitazionale avrà esercitato un lavoro negativo. Inoltre essendo lo spostamento collineare con la retta che congiunge le due masse il prodotto scalare:
+Se andiamo a considerare il caso in cui $m_2$ si allontani da $m_1$ lungo la direzione che li congiunge andando a finire ad una distanza $r_B > r_A$, allora la forza gravitazionale avrà esercitato un lavoro negativo. 
+
+<img alt="Luna che orbita attorno alla Terra" src="../imgs/forza-gravitazionale-01_SpostamentoRadialeLavoroNeg.png" width="400">
+
+Inoltre essendo lo spostamento collineare con la retta che congiunge le due masse il prodotto scalare:
 
 $$
 \hat r\cdot d\vec s = dr
 $$
 
-Se invece consideriamo il caso in cui $m_2$ orbiti seguendo una traiettoria perfettamente circolare: allora la distanza tra le masse rimarrebbe costante e il prodotto scalare tra $\hat r$ e $d\vec s$ diventerebbe nullo:
+Se invece consideriamo il caso in cui $m_2$ orbiti seguendo una traiettoria perfettamente circolare.
+
+<img alt="Luna che orbita attorno alla Terra" src="../imgs/forza-gravitazionale-02_SpostamentoTangenzialeLavoroNullo.png" width="400">
+
+Allora la distanza tra le masse rimarrebbe costante e il prodotto scalare tra $\hat r$ e $d\vec s$ diventerebbe nullo:
 
 $$
 \hat r \cdot d \vec s = 0 \quad \mathtt{perché} \quad \hat r \perp d\vec s
 $$
 
-Quindi pensando ad un orbita ellittica il lavoro della forza gravitazionale sarà funzione della distanza radiale, quindi non dipenderà dal percorso e perciò la forza gravitazionale è una __forza conservativa__.
+Quindi pensando ad un orbita ellittica il lavoro della forza gravitazionale sarà funzione della distanza radiale, quindi non dipenderà dal percorso e perciò è una __forza conservativa__.
+
+<img alt="Luna che orbita attorno alla Terra" src="../imgs/forza-gravitazionale-03_EnergiaPotenziale.png" width="600">
 
 Il lavoro sarà definito come:
 
 $$
-W_{i\rightarrow f} = \int_i^f -\gamma\frac {m_1\,m_2}{r^2} dr = -\gamma \,m_1\,m_2 \int_i^f \frac 1{r^2}dr =  -\gamma \,m_1\,m_2 \bigg(-\frac 1 {r_f} - \bigg[-\frac 1 {r_i}\bigg]\bigg) = \cdots
+W_{A\rightarrow B} = \int_{r_A}^{r_B} -\gamma\frac {m_T\,m_L}{r^2} dr = -\gamma \,m_T\,m_L \int_{r_A}^{r_B} \frac 1{r^2}dr =  -\gamma \,m_T\,m_L \left[-\frac 1 {r}\right]_{r_A}^{r_B} = \cdots
 $$
 
 $$
-\cdots = \gamma\frac {m_1\,m_2}{r_f} - \gamma\frac {m_1\,m_2}{r_i} = -\Delta U
+\cdots = -\gamma \,m_T\,m_L \left(-\frac 1 {r_B} + \frac 1 {r_A}\right) = \gamma\frac {m_T\,m_L}{r_B} - \gamma\frac {m_T\,m_L}{r_A} = -\Delta U
 $$
 
 
 Quindi l'energia potenziale sarà:
 
 $$
-U(\vec r) = -\gamma \frac {m_1\,m_2}r
+U(\vec r) = -\gamma \frac {m_T\,m_L}r
 $$
 
 ###### TODO aggiungere ragionamento con il sistema di riferimento polare?

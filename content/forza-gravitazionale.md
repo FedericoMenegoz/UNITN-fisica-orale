@@ -79,35 +79,33 @@ Spiacevole perché nel momento del contatto con il suolo, subiremo una deceleraz
 
 <div class="esempio" markdown=1>
 
-Per esempio, se all'interno di una scatola fossimo in caduta libera da un'altezza di:
+Per esempio, se fossimo in orbita all'interno di una scatola ed ad un certo punto la velocità tangenziale si annullasse, supponendo un'altezza (stazione spaziale):
 
-$$h = 100\,m$$
+$$h\simeq 4.1 \cdot 10^5 \;m$$
 
-arriveremo al suolo con una velocità:
+arriveremo al suolo con una velocità (due grosse assunzioni: attrito aria trascurabile e g costante):
 
-$$v = \sqrt {2gh} = 44.3 \;m/s $$
+$$v = \sqrt {2gh} = 2834.8 \;m/s \sim 2.8 \,km/s $$
 
 e supponiamo che al momento dell'impatto ci fermiamo in un tempo di
 
 $$
-t_{impatto} = 0.2 s
+t_{impatto} = 0.2\,s
 $$
 
 allora la decelerazione media durante l'urto sarebbe:
 
 $$
-\overline a_{impatto} = \frac{44.3}{0.2} = 221.4 \;\frac m {s^2}
+\overline a_{impatto} = \frac{2834.8}{0.2} = 14173.9 \;\frac m {s^2}
 $$
 
 quindi il peso apparente in quei $0.2$ secondi sarebbe:
 
 $$
-P = m(\overline a_{impatto} + g) \eqsim m\cdot  230\ \; N
+P = m(\overline a_{impatto} + g) \eqsim m\cdot   14183.7\,N
 $$
 
-Quindi peseremmo circa __23 volte__ in più: per una persona di $80\;kg$ una bilancia segnerebbe $1840\;kg$.
-
-Facendo gli stessi calcoli, dalla stazione spaziale con un altezza $h\simeq 4 \cdot 10^5 \;m$ la bilagna segnerebbe circa $112'000 \;kg$ durante l'impatto!!
+Quindi peseremmo circa __1447.3 volte__ in più: per una persona di $80\;kg$ una bilancia segnerebbe circa $116\,000\;kg$.
 
 </div>
 

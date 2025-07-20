@@ -107,6 +107,12 @@ $$ \vec a_{CM} = 0,\quad \vec v_{CM} = cost,\quad \sum_i \vec p_i = cost $$
 
 ---
 
+## Sistema di riferimento del centro di massa
+
+- todo
+
+---
+
 ## Domande
 
 {% assign counter = page.counter | plus: 1 %}

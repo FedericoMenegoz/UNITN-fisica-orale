@@ -16,6 +16,8 @@ $$
 
 Tenendo presente la [terza legge di Newton](dinamica.md#terza-legge-di-newton-principio-di-azione-e-reazione) se un punto $i$-esimo esercita una forza $\vec F_{i\rightarrow j}$ su un punto $j$-esimo allora il punto $j$-esimo esercita una forza $\vec F_{j\rightarrow i}$ sul punto $i$-esimo. Tali forze sono uguali in modulo, sono sulla stessa retta d'azione e di verso opposto.
 
+<img alt="due punti i e j su un sistema di punti" src="../imgs/sistemi-di-punti-00_ForzeInterneEsterne.png">
+
 Quindi prendendo in considerazione la risultante nel sistema di tutte le forze:
 - esterne 
 
@@ -28,6 +30,7 @@ $$
 $$
 \vec R^{(I)} = \sum _i^n \vec R_i^{(I)} = \sum_{i=1}^n\;\; \sum _{j=1\land j\ne i} ^n \vec F_{i\rightarrow j}^{(I)} = 0
 $$
+
 
 |$F_{i\rightarrow j}$|$m_1$|$m_2$|$\cdots$|$m_n$|
 |-|-|-|-|-|
@@ -93,7 +96,7 @@ con $\frac {\sum_{i=1}^n m_i \cdot \vec r_i}{M} = \vec r_{CM}$:
 
 ---
 
-## Sistema isolato
+## Conservazione momento in un sistema isolato
 
 Un sistema si dice __isolato__ se 
 - non è soggetto a forze __esterne__, oppure 
@@ -126,7 +129,7 @@ L'enunciato della [terza legge di Newton](dinamica.md#terza-legge-di-newton-prin
 
 ###### b) Quando un sistema si dice isolato?
 
-Vedi [qui](#sistema-isolato).
+Vedi [qui](#conservazione-momento-in-un-sistema-isolato ).
 
 ###### c)  Se considero un sistema che prevede delle forze di reazione, mi fanno escludere a priori che il sistema sia isolato, oppure non è vero? La legge vale sempre?
 

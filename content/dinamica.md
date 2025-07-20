@@ -90,11 +90,15 @@ $$ \vec R + \vec F + \vec P = 0$$
 
 ### Forza d'attrito dinamico
 Dal momento in cui la forza $\vec F$ supera $\mu_s N$ in modulo allora si osserva che si oppone al moto un'altra forza, detta __forza di attrito radente dinamico__:
+
 $$F_{ad} = \mu_d N$$
+
 dove $\mu_d$ è detto __coefficiente di attrito dinamico__ e risulta sempre che 
+
 $$\mu_d < \mu_s$$
 
 La risultante delle forze ortogonali al piano è nulla, quindi possiamo dedurre che la forza d'attrito dinamico ha stessa direzione e verso contrario al versore della velocità $\hat u_v$: 
+
 $$ \vec F_{ad} = - \mu_d N \hat u_v$$
 
 In natura eliminare l'attrito per due materiali in contatto è impossibile, per quanto si possa comunque ridurre. Quindi per mantere un corpo in un moto rettilineo uniforme bisogna applicare una forza eguale e contraria alla forza d'attrito.
@@ -132,7 +136,9 @@ Si vede facilmente che le tensioni del filo andranno a bilanciare la reazione vi
 Si definisce __forza elastica__ una forza con direzione costante, con verso sempre rivolta a una posizione di equilibrio, e con modulo proporzionale alla distanza dal'equilibrio.
 
 Se assumiamo come asse $x$ la direzione della forza allora possiamo scrivere la __legge di Hooke__:
+
 $$\vec F_{el} = -k\,x\,\hat u_x$$
+
 In cui $k>0$ è la costante elsastica $\big[\frac N m\big]$ e il segno negativo indica che la forza è di __richiamo__ (cioè diretta verso l'equilibrio).
 
 ### Molla
@@ -158,10 +164,13 @@ Eguagliando si ottiene
 $$\frac {d^2x}{dt} = - \frac km x$$
 
 Notiamo che ponendo $\sqrt{\frac k m} = \omega$ otteniamo la legge del [moto arominico](cinematica.md#moto-armonico-semplice)
+
 $$\frac {d^2x}{dt}  + \omega^2 x = 0$$
 
 I valori dell'ampiezza $A$ e la fase iniziale $\phi$ si calcolando dalle condizioni iniziali:
+
 $$x_0 = A\sin(\phi) \quad \quad 0 = \omega A \cos(\phi)$$
+
 - todo condizioni iniziali con $v_0\ne0$
 
 ---

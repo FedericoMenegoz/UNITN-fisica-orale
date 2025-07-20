@@ -8,12 +8,15 @@ Come detto nel [moto parabolico](#moto-parabolico) la gittata indica la distanza
 ---
 ## Pulsazione e frequenza
 La pulsazione $\omega$ è la velocità con cui viene effettuata un'oscillazione nel moto armonico $$\omega = \frac {2\pi}T$$ con $T$ periodo del moto.
-La frequenza determina determina invece quante oscillazioni vengono fatte al secondo: $$f = \frac 1 T = \frac \omega{2\pi}$$
+La frequenza determina determina invece quante oscillazioni vengono fatte al secondo:
+
+$$f = \frac 1 T = \frac \omega{2\pi}$$
 
 
 ## Moto Armonico Semplice
 
 Un punto materiale segue un __moto armonico semplice__ se la sua legge oraria è definita come:
+
 $$x(t) = A\sin (\omega t + \phi)$$
 
 $A$, $\omega$ e $\phi$ sono quantità costanti e sono rispettivamente l'__ampiezza del moto__, la __pulsazione__ e la __fase iniziale__.
@@ -27,6 +30,7 @@ $$x(0) = A\sin(\phi)$$
 Quindi note $A$ e $\phi$ si può determinare la posizione iniziale del punto.
 
 Sappiamo che la funzione seno è periodica con periodo $2\pi$. Quindi se consideriamo due tempi $t$ e $t'=t+T$ sappiamo che per definizione: 
+
 $$\omega t' + \phi = \omega t + \phi + 2 \pi  $$
 
 $$\cancel{\omega t} + \omega T +  \cancel\phi =  \cancel{\omega t }+ \cancel \phi + 2 \pi $$
@@ -50,7 +54,9 @@ Per descrivere il moto su una traiettoria curvilinea possiamo utilizzare anche u
 
 Quindi conoscendo la traiettoria, possiamo descrivere completamente il moto tramite questa ascissa curvilinea. 
 
-L'incremento infinitesimo del raggio vettore $d\vec r$ ha direzione tangente alla curvatura nel punto P e in modulo sarà uguale allo spostamento infinitesimo $ds$ (arco di curva del percorso): $$d\vec r = ds \cdot \vec u_T$$
+L'incremento infinitesimo del raggio vettore $d\vec r$ ha direzione tangente alla curvatura nel punto P e in modulo sarà uguale allo spostamento infinitesimo $ds$ (arco di curva del percorso): 
+
+$$d\vec r = ds \cdot \vec u_T$$
 
 <a id="velocità-tangente"></a>
 Possiamo pensare quindi al moto come una successione di spostamenti rettilinei infinitesimi con direzione variabile. 
@@ -63,6 +69,7 @@ Si noti che questo è vero solo a livello infinitesimo, se andiamo a considerare
 rappresenta l'effettiva lunghezza del tratto di curvatura.
 
 L'accelerazione avrà due componenti, una che influirà sul modulo della velocità e una sulla sua direzione:
+
 $$\vec a = \frac {d\vec v}{dt} = \frac{d}{dt}(v\cdot \vec u_T) = \frac{dv}{dt}\vec u_T + v \frac{d \vec u_T}{dt} = \frac{dv}{dt}\vec u_T + v \frac{d\theta}{dt}\vec u_N$$
 
 ><a id="derivata-versore"></a>
@@ -75,20 +82,32 @@ $$\vec a = \frac {d\vec v}{dt} = \frac{d}{dt}(v\cdot \vec u_T) = \frac{dv}{dt}\v
 >Possiamo però provarlo matematicamente, considerando che $\lvert \lvert\hat u\rvert\rvert = 1$  perché è un versore quindi anche il prodotto scalare $\hat u \cdot \hat u = \lvert \lvert\hat u\rvert\rvert^2 = 1$. 
 >
 >Quindi la derivata del prodotto scalare del versore con se stesso è costante perciò la sua derivata è zero:
+>
 > $$\frac{d(\hat u \cdot \hat u)}{dt} = 0$$
+>
 > Si applica la regola della derivazione per il prodotto scalare:
+>
 > $$\frac{d(\hat u \cdot \hat u)}{dt} =\frac{d\hat u}{dt} \cdot \hat u + \hat u \cdot \frac{d\hat u}{dt}  = 2 \hat u \cdot \frac{d\hat u}{dt} =0$$
+>
 > Si vede dall'ultima uguaglianza che $\hat u \perp d\hat u$.
-> Per il modulo invece sappiamo che l'arco è uguale al raggio per l'angolo da cui per valori infinitesimi in cui la corda si confonde con l'arco abbiamo che: $$du = \lvert\lvert u(t)\rvert\rvert \cdot d\theta = d\theta $$
-> Infine:$$\frac{d\hat u}{dt} = \frac{d\theta}{dt}\hat u_N$$
+> Per il modulo invece sappiamo che l'arco è uguale al raggio per l'angolo da cui per valori infinitesimi in cui la corda si confonde con l'arco abbiamo che: 
+>
+> $$du = \lvert\lvert u(t)\rvert\rvert \cdot d\theta = d\theta $$
+>
+> Infine:
+>
+>$$\frac{d\hat u}{dt} = \frac{d\theta}{dt}\hat u_N$$
 
 
 <br>
 
 Il termine $v \frac{d\theta}{dt}\vec u_N$ determina quanto velocemente cambia direzione la velocità, in termini infinitesimi le rette normali alla traiettoria si incontreranno in un punto che coincide con il centro di una circonferenza tangente alla traiettoria in quel punto, esso viene chiamato __centro di curvatura__ della traiettoria nel punto P. Al variare del punto P il centro di curvatura e quindi anche il __raggio di curvatura__ cambiano. 
 L'arco di traiettoria $ds = R \cdot d\theta$ con $R$ raggio di curvatura:
+
 $$\frac{d\theta}{dt} = \frac{d\theta}{ds} \frac {ds}{dt} = \frac{1}{R} v$$
+
 Sostituendo otteniamo:
+
 $$\vec a = \frac{dv}{dt}\vec u_T + \frac{v^2}{R}\vec u_N$$
 
 ### TODO 
@@ -100,7 +119,9 @@ Si chiama moto circolare un moto la cui traiettoria è rappresentata da una circ
 
 ### Uniforme
 Nel caso il modulo della velocità sia costante allora il moto sarà __uniforme__ per cui: 
+
 $$\lvert\vec  v\rvert = cost \quad \Rightarrow \quad \vec a = \vec a_N$$
+
 Essendo il modulo della velocità costante allora sicuramente il punto percorrerà la circonferenza in un certo periodo e per definire il moto ci basta conoscere appunto il periodo ed il raggio della circonferenza che possono essere messi in relazione come segue:
 
 $$T = \frac C v = \frac {2\pi R}{v} $$
@@ -161,6 +182,7 @@ Dal momento in cui il punto è stato lanciato esso avrà un'accelerazione di gra
 $$\vec g = -g\cdot \hat u_y$$
 
 Si possono quindi scomporre velocità e accelerazione rispetto agli assi $x$ e $y$.
+
 $$
 \begin{cases}
 x(t) = v_0\cdot \cos (\theta) t\\
@@ -169,6 +191,7 @@ y(t) = v_0\cdot \sin (\theta) t - \frac 12 gt^2 \\
 $$
 
 Per trovare la traiettoria eliminiamo il tempo nelle due espressioni con
+
 $$t=\frac x{v_0\cos \theta}$$
 
 $$y(x) = x\tan \theta - x^2\frac {g}{2v_0^2\cos^2\theta}$$
@@ -176,7 +199,9 @@ $$y(x) = x\tan \theta - x^2\frac {g}{2v_0^2\cos^2\theta}$$
 Che è l'equazione di una __parabola__.
 
 Per calcolare la __gittata__ basta porre $y(x) = 0$ e otteniamo due soluzioni, scartiamo quella $x=0$ che corrisponde all'inizio della traiettoria e ricordando la formula di duplicazione $\sin(2\phi) = 2 \sin \phi \cos \phi$ otteniamo
+
 $$0 = \cancel x(\tan \theta - x \frac {g}{2v_0^2 \cos^2 \theta})$$
+
 $$x_G = \frac {v_0^2\sin (2\theta)}g$$
 
 Ottenuta la gittata possiamo calcolare l'__altezza massima__ sapendo che la parabola è simmetrica e quindi $x_M = \frac{x_G}2$

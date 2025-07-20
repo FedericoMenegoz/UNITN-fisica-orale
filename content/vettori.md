@@ -84,5 +84,6 @@ Il prodotto vettoriale si può iterare, ma non è associativo quindi va specific
 
 
 ## Operazioni tra vettori. Prodotto vettoriale. Prodotto Scalare.
-[risposta precedente](#disegna-le-operazioni-vettoriali-che-abbiamo-studiato)
+Vedi [qui](#disegna-le-operazioni-vettoriali-che-abbiamo-studiato)
 
+---

@@ -84,6 +84,9 @@ Un sistema è detto __adiabatico__ se è circondato da pareti adiabatiche e quin
 ---
 ### Termometro (extra?)
 
+<img src="../imgs/empty.png">
+
+
 ---
 ### Calorimetria
 
@@ -349,7 +352,7 @@ Utilizzando la convenzione adottata nella formula $\Delta U = Q - W$:
 <img alt="convenzione segni" src="../imgs/termodinamica-03_ConvezioneSegni.png">
 
 ---
-### Leggi dei gas ideali
+### Leggi dei gas ideali e trasformazioni notevoli
 Si considerano gas racchiusi in un contenitore di volume $V$ con parete mobile, con valore di pressione uguale per tutti i suoi punti, le variabili per descrivere lo stato sono:
 - __pressione__ $p$ è la forza per unità di superficie esercitata dal gas sulle pareti del contenitore:
 $$p = \frac {\vec F_{\perp}}{S} \quad \bigg[\frac N {m^2} = Pa\bigg]$$
@@ -367,7 +370,7 @@ Ad esempio, in un palloncino la pressione interna del gas è bilanciata dalla fo
 Quando un gas è sufficientemente rarefatto, si trova a bassa pressione e ad alta temperatura rispetto al punto di condensazione, può essere approssimato come gas ideale.
 
 ---
-##### Legge di Boyle 
+##### Legge di Boyle (trasformazioni isoterme)
 La __legge di Boyle__:
 
 $$pV = cost$$
@@ -418,13 +421,6 @@ $$p = p_0 \cdot \alpha (\frac 1 \alpha + t) = p_0\alpha T$$
 ###### Legge di avogadro
 Volumi uguali di gas diversi, alla stessa temperatura e pressione, contengono lo stesso numero di molecole oppure equivalentemente lo stesso numero di moli.
 
-$$N = \frac 1{k_B} \frac {pV}{T}$$
-
-$$n = \frac 1 R \frac {pV}T$$
-
-- $k_B = 1.38 \cdot 10^{-23}$ è la __costante di Boltzman__ con unità di misura $\big[\frac J K\big]$
-- $R = 8.314 \cdot 10^{-23}$ è la __costante di Boltzman__ con unità di misura $\big[\frac J {K\cdot mol}\big]$
-
 >Come conseguenza una mole di gas qualsiasi, a una data temperatura e pressione, occupa sempre lo stesso volume.
 > - $n = 1\;mol$
 > - $p = 1\;atm$
@@ -463,23 +459,174 @@ $$p_0\alpha V_m = R  = 8.314 \frac J{mol\cdot K}$$
 > $$
 >
 > con $N$ numero di particelle e $n= \frac N {N_A}$
+>
+> - $k_B = 1.38 \cdot 10^{-23}$ è la __costante di Boltzman__ con unità di misura $\big[\frac J K\big]$
+> - $R = 8.314 \cdot 10^{-23}$ è la __costante di Boltzman__ con unità di misura $\big[\frac J {K\cdot mol}\big]$
 
 Questo è un comportamento limite dei gas ideali: quanto più un gas è caldo e rarefatto, tanto più il suo comportamento si avvicina a quello di un gas ideale, praticamente identico per tutti i gas in tali condizioni.
 
 ---
 ### Calori specifici gas ideali
 
+###### Calore specifico molare a volume costante
+In una __trasformazione isocora__ dall'equazione del [calore specifico](#calore-specifico-molare):
+
+$$dQ = nc_VdT$$
+
+con $c_V$ __calore specifico molare a volume costante__ 
+
+
+###### Calore specifico molare a pressione costante
+In una trasformazione isobara possiamo calcolare il calore con il __calore specifico molare a pressione costante__:
+
+$$dQ = n c_pdT$$
+
+
+
 ---
 ### Energia interna gas ideale
 ###### Espansione libera dei gas
-###### Relazione di Mayer
+La dipendenza dell'energia interna di un gas ideale dalle coordinate termodinamiche è stata ricavata analizzando il risultato dell'esperienza sull'__espansione libera__ dei gas eseguita da Joule.
+
+In un contenitore con pareti rigide e diatermiche è diviso in due parti uguali separate da un rubinetto, a sinistra si trova il gas, mentre nella parte destra si è creato il vuoto. Questo contenitore è all'interno di un calorimetro (contenitore adiabatico pieno di liquido) e la temperatura iniziale di equilibrio è T.
+Si apre il rubinetto e si lascia espandere il gas in tutto il volume a disposizione.
+
+Sperimentalmente si osserva che indipendentemente dalla pressione del gas, aprendo lentamente o velocemente, la temperatura del calorimetro alla fine del processo è sempre la stessa $T$, temperatura iniziale di equilibrio.
+
+Dal primo principio della termodinamica applicato a tutto il sistema:
+
+$$\Delta U = \Delta U _{gas} + \Delta U_{cal} = Q - W = 0$$
+
+In quanto l'intero sistema non scambia ne lavoro ne calore con l'ambiente. D'altra parte lo stato del liquido del calorimetro è lo stesso di quello iniziale, per cui la sua energia non è cambiata, ne segue che nell'espansione libera l'energia interna di un gas non varia ed essendo solo la temperatura la costante, si può dedurre che 
+
+> l'energia interna deve essere funzione soltanto della temperatura
+
+Risultato vero solo per un gas ideale.
 
 ---
 ### Trasformazioni notevoli
 ###### Trasformazioni adiabatiche
+Il gas è all'interno di un contenitore a pareti adiabatiche quindi può scambiare solo lavoro per esempio tramite una parete mobile, consideriamo una trasformazione da uno stato A a uno stato B:
+
+$$
+W_{AB} = - \Delta U = n c_V (T_B - T_A)
+$$
+
+Si utilizza l'equazione di stato per le temperature:
+
+$$
+T_A = \frac{p_AV_A}{nR} \quad T_B = \frac{p_BV_B}{nR}
+$$
+
+E si utilizza la relazione di Mayer con $\gamma = \frac{c_p}{c_V}$
+
+$$R = c_p - c_V \Rightarrow \frac {c_V}{c_p - c_V} = \frac 1 {\gamma - 1}$$
+
+Sostituendo
+
+$$
+W_{AB} = \frac 1 {\gamma - 1}(p_BV_B - p_AV_A)
+$$
+
+>- se si ha un'_espansione adiabatica_ il lavoro è positivo e $\Delta U < 0$ quindi il gas si raffredda
+>
+>$$T_A < T_B$$
+>
+>- se si ha una _compressione adiabatica_ il lavoro è negativo e $\Delta U > 0$ quindi il gas si riscalda
+>
+>$$T_A > T_B$$
+
+Se la __trasformazione__ è __adiabatica reversibile__:
+
+$$dQ = dU + dW = nc_VdT + pdV = 0$$
+
+inoltre si può utilizzare l'equazione di stato in ogni stato intermedio (perché la trasformazione è reversibile) per esprimere la pressione:
+
+$$nc_VdT + \frac {nRT}{V} dV = 0$$
+
+Separiamo le variabili e utilizziamo la relazione di Mayer
+
+$$(\gamma - 1) \frac {dv}V = -\frac{dT}T$$
+Integrando:
+
+$$(\gamma - 1) \ln\bigg(\frac {V_B}{V_A}\bigg) = -\ln\bigg(\frac {T_B}{T_A}\bigg)\quad\quad\,\, $$
+
+$$\Downarrow$$
+
+$$T_BV_B^{\gamma - 1} = T_AV_A^{\gamma -1}$$
+
+Tramite l'equazione di stato si può trasformare la relazione tra $T$ e $V$ in una tra $p$ e $V$ 
+
+$$pV^\gamma = cost$$
+
+o tra $p$ e $T$:
+
+$$pT^{\frac {1 - \gamma}{\gamma}} = cost$$
+
+Se rappresentiamo la trasformazione nel piano di Clapeyron utilizzando $pV^\gamma = cost$ e confrontandola con un __isoterma__ $pV = cost$, avremo due curve simili, ma la curva adiabatica sarà più ripida perché $\gamma > 1$.
+
+<img alt="Confronto su piano di Clapeyron di una trasformazione adiabatica e due isoterme" src="../imgs/termodinamica-06_AdiabaticaIsoterme.png">
+
+---
 ###### Trasformazioni isocore
+
+Il volume rimane costante quindi il lavoro in questa trasformazione è nullo:
+
+$$dU = dQ = nc_VdT$$
+
+Poiché per un gas ideale l'energia interna $U$ (funzione di stato) dipende solo dalla temperatura, l'equazione 
+
+$$dU = nc_VdT$$
+
+è universale e si può utlizzare per qualsiasi trasformazione, se volessimo includere anche il lavoro si ottiene:
+
+$$dQ = nc_VdT + pdV$$
+
+Ricordando dalla teoria cinetica i valori per i gas ideali:
+- gas monoatomici $c_V=\frac 32 R$
+- gas biatomici $c_V=\frac 52 R$
+
+---
 ###### Trasformazioni isobare
+
+In una trasformazione isobara la pressione è costante:
+
+$$
+p = \frac {nRT}{V} = cost \quad 
+$$
+
+Dal primo principio della termodinamica:
+
+$$dU = dQ - dW$$
+
+Sapendo che
+
+$$dW = pdV = \frac{nRT}{V}dV = n R dT$$
+
+Mettendo insieme la prima legge della termodinamica 
+
+$$dU = \delta Q - \delta W$$ 
+
+si ottiene la relazione di Mayer:
+
+###### Relazione di Mayer
+
+$$\cancel nc_V\cancel{dT} = \cancel nc_p\cancel{dT} - \cancel nR\cancel{dT} \quad \Rightarrow \quad R = c_p - c_V$$
+
+---
 ###### Trasformazioni isoterme
+
+Per le trasformazioni isoterme non abbiamo modo di calcolare il calore scambiato, ma sappiamo, grazie all'equazione di stato dei gas ideali:
+
+$$pV = nRT \Rightarrow p = \frac {nRT}V = \frac {cost}V$$
+
+Quinid il lavoro:
+
+$$W = \int_i^fpdV = \int_i^f\frac {nRT}V dv = nRT\bigg[\ln \bigg(\frac {V_f}{V_i}\bigg)\bigg]$$
+
+Essendo __isoterma__:
+
+$$\Delta U = 0 \Rightarrow Q = W = nRT \ln \bigg(\frac {V_f}{V_i}\bigg)$$
 
 ---
 ### Trasformazioni cicliche

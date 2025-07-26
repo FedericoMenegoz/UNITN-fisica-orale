@@ -284,13 +284,23 @@ Consideriamo un gas all'interno di un contenitore dotato di di un pistone che è
 
 Noti i valori del volume e della pressione, dall'equazione di stato possiamo ricavare la temperatura, e le trasformazioni effettuate dal sistema possono essere rappresentate nel piano di Clapeyron.
 
-Ogni volta che il gas si espande o viene compresso avviene uno scambio di lavoro che a livello infinitesimo si può scrivere come:
+Immaginiamo un contenitore con un pistone mobile, quando il volume del gas aumenta è stato eseguito un lavoro:
+
+$$dW = \vec F \cdot d\vec s $$
+
+essendo la forza parallela allo spostamento
+
+$$dW = F  ds $$
+
+utilizzando la pressione $p = \frac F S$: 
+
+$$dW = \frac F S S ds = pdV$$
 
 $$
 dW = pdV
 $$
 
-In una trasormazione da uno stato $A$ ad uno stato $B$:
+In una trasormazione da uno stato $A$ ad uno stato $B$, in questo caso la pressione è in funzione del volume perché non stiamo trattando più valori infinitesimi:
 
 $$
 \int _A ^B p(V) dv
@@ -298,7 +308,7 @@ $$
 
 > Questa funzione è utile solo quando si conosce $p(V)$:
 >
-> - __è nota la pressione esterna__ $p$ e quindi l'integrale è direttamente calcolabile
+> - __è nota la pressione esterna__ $p$ una buona approssimazione è l'uso  della pressione esterna l'integrale è direttamente calcolabile 
 > 
 > $$W = p_{amb}(V_B - V_A)$$
 >
@@ -760,6 +770,96 @@ In quest'ultima equazione si nota il fatto che non compare nessuna grandezza car
 
 ---
 ### Teoria cinetica dei gas
+Consideriamo un contenitore cubico dal lato $l$ con all'interno un gas ideale:
+1. gli urti tra le molecole e la parete sono considerati urti elastici con angoli di incidenza uguali
+2. la massa della parete è molto maggiore rispetto a quella delle singole molecole quindi le consideriamo fisse durante gli urti
+
+Quando una molecola urta contro la parete perpendicolare all'asse $x$, la quantità di moto varia solo per la componente $x$:
+
+$$\Delta p = m(\vec {v'} - \vec v) = m(\vec {v_x}' - \vec v_x) = -2m\vec{v_x}$$
+
+Quindi l'impulso trasferito alla parete è:
+
+$$2mv_x$$
+
+La particella inoltre impiegherà un tempo $\Delta t$ per scontrarsi di nuovo con la stessa parete:
+
+$$\Delta t = \frac{2l_x}{v_x}$$
+
+quindi la forza che agisce lungo la parete:
+
+$$\vec F_x = \frac {\Delta \vec p}{\Delta t} = \frac {2m\vec v_x v_x}{2l_x}$$
+
+eliminando la notazione vettoriale perché siamo sulla $x$
+
+$$F_x = \frac {\Delta p}{\Delta t} = \frac {m{v_x}^2}{l_x}$$
+
+Ora vogliamo trovare la forza totale sempre su quella parete causata da tutte le particelle:
+
+$${F_x}^{tot} = \frac m{l_x}\sum_{i=1}^N  {v_{x\,i}}^2$$
+
+possiamo considerare la media delle velocità $\langle v_x^2 \rangle$
+
+$${F_x}^{tot} = N\frac {m}{l_x} \langle{v_x}^2\rangle$$
+
+dividendo per la superficie entrambi i membri ottengo la definizione di pressione per la parete ortogonale a x
+
+$$p_x=\frac{F_x^{tot}}{l_z l_y} = N\frac m{l_x l_z l_y}\langle{v_x}^2\rangle = N\frac mV\langle{v_x}^2\rangle $$
+
+Ma sapendo che la pressione deve essere uguale per ogni parete otteniamo che:
+
+$$p = p_x = p_y = p_z$$
+
+$$\langle{v_x}^2\rangle = \langle{v_y}^2\rangle = \langle{v_z}^2\rangle$$
+
+$$\langle \vec v^2 \rangle = \langle \vec v_x^2 \rangle +  \langle \vec v_y^2  \rangle +  \langle \vec v_z^2  \rangle$$
+
+$$ \langle \vec v_x^2 \rangle =  \langle \vec v_y^2  \rangle =  \langle \vec v_z^2  \rangle = \frac {\langle \vec v^2  \rangle}3$$
+
+Quindi otteniamo:
+
+$$pV = \frac {2N}3\big\langle{\frac 12m{v_x}^2}\big\rangle = \frac {2N}3\big\langle{E_k}\big\rangle$$
+
+ma sapendo che 
+
+$$pV = Nk_B T$$
+
+otteniamo che 
+
+$$Nk_B T = \frac {2}3 N\big\langle{E_k}\big\rangle$$
+
+da cui
+
+$$\langle{E_k}\big\rangle = \frac 32 k_B T$$
+
+>L'energia cinetica media delle molecole che compongono un gas ideale è direttamente proporzionale alla temperatura assoluta del gas, con costante di proporzionalità $\frac{3}{2}k_B$. Questo risultato fondamentale della teoria cinetica stabilisce il legame microscopico tra il moto delle particelle e la temperatura macroscopica del sistema.
+> 
+> Inoltre in questo modello non ci sono energia del gas ideale è dovuta solo ed esclusivamente al movimento delle sue particelle (in questo modello non ci sono energie potenziali o attrazioni tra le molecole) quindi:
+>
+> $$U = N \langle E_k \rangle $$
+>
+> $$U = \frac 32N k_BT $$
+>
+> ovvero l'energia è funzione solo della temperatura, come sperimentato nell'[espansione libera dei gas ideali](#espansione-libera-dei-gas), in questo caso però questo risultato deriva da un modello.
+>
+
+#### Gradi di libertà:
+Il fattore $\frac{3}{2}$ deriva dal fatto che le molecole possono muoversi nelle tre dimensioni spaziali, avendo quindi 3 gradi di libertà traslazionali.
+Secondo il teorema di equipartizione dell'energia, ogni grado di libertà quadratico contribuisce con $\frac{1}{2}k_B T$ all'energia media:
+
+- 3 gradi di libertà traslazionali → $3 \times \frac{1}{2}k_B T = \frac{3}{2}k_B T$
+
+Questo numero può cambiare per molecole più complesse:
+
+###### Gas monoatomico (He, Ar): 
+solo traslazione → $f = 3$ → $\langle E \rangle = \frac{3}{2}k_B T$
+
+###### Gas biatomico (N₂, O₂):
+
+3 gradi traslazionali + 2 gradi rotazionali → $f = 5$ → $\langle E \rangle = \frac{5}{2}k_B T$
+
+
+
 
 ---
 ## Secondo principio della termodinamica

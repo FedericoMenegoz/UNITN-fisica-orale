@@ -162,7 +162,7 @@ Una mole di sostanza è la quantità di materia di suddetta sostanza contenente 
 
 ---
 ###### Cambiamenti di fase
-Sono detti __cambiamenti di fase__ i passaggi di una sostanza da uno stato di aggregazione all'altro.
+Sono detti __cambiamenti di fase__ i passaggi di una sostanza da uno stato di aggregazione all'altro, questi passaggi includono uno scambio di calore senza però cambiare la temperatura della sostanza.
 
 |Cambiamento di fase|Terminologia|
 |-|-|
@@ -183,12 +183,27 @@ Il calore cambia di segno a seconda del tipo di cambiamento:
 - se la sostanza __solidifica__ o __condensa__, allora __cede__ calore
 
 
-###### TODO
-- aggiungere le parti relative da diagrammi pT
+###### Diagramma di fase (pT)
+Un diagramma interessante sul cambiamento di fase è il diagramma tra la pressione e la temperatura.
+
+<img alt="diagramma cambio di fase pressione temperatura" src="../imgs/termodinamica-00a_DiagrammaPressioneTemperaturaCambioFase.png">
+
+La linea di fusione/solidificazione in genere ha pendenza positiva, ciò significa che all'aumentare della pressione la sostanza ha una temperatura maggiore di fusione, fa eccezione l'acqua che invece all'aumentare della pressione la temperatura di fusione diminuisce.
+
+Il __punto triplo__ è il punto di intersezione delle tre linee di cambio di fase. È un punto molto interessante perché possono coesistere le tre fasi contemporaneamente, cioè se una certa sostanza si trova esattamente nel punto triplo, allora avrà frazioni uguali nei tre stati di aggregazione.
+
+Per esempio il punto triplo dell'acqua è:
+- $T_{pt}=271.16\;K$
+- $p_{pt}=611\;Pa$
+
+Che definisce la scala di temperatura che usiamo, perché il punto triplo dell'acqua viene preso come punto fisso.
+
+La linea di condensazione/evaporazione non è infinita, ma termina in un punto detto __punto critico__. 
+Oltre a questo punto non è più possibile distinguere la fase liquida da quella gassosa, sono sempre compresenti, la densità del gas aumenta e quella del liquido diminuisce fino a coincidere.
 
 ###### Sorgente di calore
 
-Si definisce __sorgente di calore__ un corpo con capacità termica infinita.
+Si definisce __sorgente di calore__ un corpo con capacità termica molto grande (idealmente infinita), in grado di cedere o assorbire calore senza subire variazioni apprezzabili della propria temperatura.
 
 --- 
 ######  Trasmissione del calore: CONDUZIONE
@@ -630,11 +645,118 @@ $$\Delta U = 0 \Rightarrow Q = W = nRT \ln \bigg(\frac {V_f}{V_i}\bigg)$$
 
 ---
 ### Trasformazioni cicliche
-###### Ciclo di carnot
+Una trasformazione ciclica è quella trasformazione in cui lo stato finale coincide con lo stato iniziale, di conseguenza in un ciclo $\Delta U = 0$ e $Q = W$, il lavoro scambiato coincide con il calore scambiato.
 
----
-### Diagrammi pV pT (trovare analogia con lezioni iuppa)
-###### Punto triplo
+- se duratnte la trasformazione viene prodotto lavoro ($W>0$) assorbendo complessivamente calore da un numero opportuno di sorgenti, allora il dispositivo si dice __macchina termica__
+
+- se durante la trasformazione viene richiesto lavoro esterno ($W<0$), cedendo complessivamente calore a un opportuno numero di sorgenti, allora il dispositivo si dice __macchina frigorifera__
+
+Siano:
+- $Q = Q_A + Q_C$
+    - $Q_A > 0$ somma dei calori assorbiti
+    - $Q_C < 0$ somma dei calori ceduti
+- $W = W_F + W_S$
+    - $W_F < 0$ somma dei lavori compiuto
+    - $W_S > 0$ somma dei lavori subiti
+
+> Il rendimento $\eta$ di una macchina termica è definito come il rapporto tra il lavoro fornito e la quantità di calore assorbito:
+>
+>$$\eta = \frac {W}{Q_A} = \frac {Q_A + Q_C}{Q_A} = 1 + \frac {Q_C}{Q_A} = 1 - \bigg|\frac {Q_C}{Q_A}\bigg|$$
+>
+>Sperimentalmente si osserva sempre che 
+>
+>$$0 \le \eta < 1$$
+>
+>$$W<Q_A \quad |Q_C| < Q_A \quad Q_C \ne 0$$ 
+
+#### Ciclo di carnot
+Il ciclo di carnot è diviso in quattro trasformazioni:
+1. trasformazione $AB$: __espansione isoterma__ reversibile alla temperatura $T_2$
+2. trasformazione $BC$: __espansione adiabatica__ reversibile
+3. trasformazione $CD$ __compressione isoterma__ reversibile alla temperatura $T_1$
+4. trasformazione $DA$: __compressione adiabatica__ reversibile
+
+<img alt="ciclo di Carnot espansione adiabatica" src="../imgs/termodinamica-11_CicloDiCarnotpV.png">
+
+
+###### 1) A$\rightarrow$B _ESPANSIONE ISOTERMA A $T_2$_
+
+<img alt="ciclo di Carnot espansione isoterma" src="../imgs/termodinamica-07_CarnotAB.png" class="img-small">
+
+Il gas durante questa trasformazione è in equilibrio termico con una sorgente di calore a temperatura $T_2$, il gas passa:
+- dallo stato $A$ di coordinate $p_A, V_A, T_2$
+- allo stato $B$ di coordinate $p_B, V_B, T_2$
+assorbendo il calore:
+
+$$Q_{A} = nRT_2 \ln\bigg(\frac {V_B}{V_A}\bigg) = W_{AB}$$
+
+
+###### 2) B$\rightarrow$C _ESPANSIONE ADIABATICA_
+
+<img alt="ciclo di Carnot espansione adiabatica" src="../imgs/termodinamica-08_CarnotBC.png" class="img-small">
+
+
+Essendo una trasformazione adiabatica, il gas è isolato da ogni srogente di calore per cui esso passa: 
+- dallo stato $B$ di coordinate $p_B, V_B, T_2$
+- allo stato $B$ di coordinate $p_C, V_C, T_1$
+
+con $T_2 > T_1$ e 
+
+$$\Delta U = Q_{BC} - W_{BC} = 0 - W_{BC}$$ 
+
+$$\Downarrow$$
+
+$$W_{BC} = - \Delta U = -nc_V(T_1 - T_2) = nc_V(T_2-T_1)$$
+
+
+###### 3) C$\rightarrow$D _COMPRESSIONE ISOTERMA_
+
+<img alt="ciclo di Carnot compressione isoterma" src="../imgs/termodinamica-09_CarnotCD.png" class="img-small">
+
+
+Analogamente alla A$\rightarrow$B, in questa trasformazione il gas è in contatto con una sorgente di calore a temperatura $T_1$, ma il gas viene compresso, il calore ceduto:
+
+$$Q_{C} = nRT_1 \ln\bigg(\frac {V_D}{V_C}\bigg) = W_{CD}$$
+
+Che è negativo come il lavoro perché $V_C > V_D$.
+
+###### 4) C$\rightarrow$D _COMPRESSIONE ADIABATICA_
+
+<img alt="ciclo di Carnot compressione adiabatica" src="../imgs/termodinamica-10_CarnotDA.png" class="img-small">
+
+
+Analogamente alla B$\rightarrow$C, in questa trasformazione il gas è isolato da ogni fonte di calore, il calore scambiato è nullo e il lavoro corrisponde a:
+
+$$W_{DA} = - \Delta U = -nc_V(T_2 - T_1) = nc_V(T_1-T_2) = -W_{BC}$$
+
+##### Rendimento ciclo di Carnot
+
+- $$Q = Q_A + Q_C = W = W_{AB} + W_{BC} + W_{CD} + W_{DA} = W_{AB} + W_{CD}$$
+- $$\eta = 1 + \frac {Q_C}{Q_A} = 1 + \frac {T_1 \ln \frac {V_D}{V_C}}{T_2 \ln \frac {V_B}{V_A}} = 1 - \frac {T_1 \ln \frac {V_C}{V_D}}{T_2 \ln \frac {V_B}{V_A}} $$
+
+Sapendo che per le trasformazioni adiabatiche vale:
+
+$$T_2{V_B}^{\gamma-1} = T_1{V_C}^{\gamma-1}$$
+
+$$ T_2{V_A}^{\gamma-1} = T_1{V_D}^{\gamma-1}$$
+
+Dividendo membro a membro si ottiene che:
+
+$$\frac {V_B}{V_A} = \frac {V_C}{V_D} \quad \Rightarrow \quad \ln \frac {V_B}{V_A} = \ln \frac {V_C}{V_D}$$
+
+Quindi il rendimento diventa:
+
+$$\eta = 1 - \frac {T_1}{T_2}$$
+
+In quest'ultima equazione si nota il fatto che non compare nessuna grandezza caratteristica del gas, ma solo i valori delle temperature delle sorgenti con cui il gas scambia calore.
+
+> Il rendimento del ciclo di Carnot, compiuto da un gas ideale, dipende solo dalle temperature a cui avvengono gli scambi isotermi di calore.
+
+<img alt="macchina termica del Carnot" src="../imgs/termodinamica-12_CicloDiCarnotMacchinaTermica.png" class="img-small">
+
+
+###### TODO
+- ciclo frigorifero (carnot al contrario)
 
 ---
 ### Teoria cinetica dei gas

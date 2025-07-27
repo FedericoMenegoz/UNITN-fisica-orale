@@ -905,7 +905,7 @@ Queste due evidenze sperimentali:
 2. _impossibilità di far fluire calora da un corpo freddo a uno caldo spontaneamente_
 hanno portato alla formulazione del __secondo principio della termodinamica__.
 
-### Equivalenza enunciati
+### Enunciati secondo principio della termodinamica
 ###### Enunciato di Kelvin-Planck
 > È impossibile realizzare un processo che abbia come __unico__ risultato la trasformazione in lavoro del calore fornito da una sorgente a temperatura uniforme
 
@@ -916,7 +916,7 @@ hanno portato alla formulazione del __secondo principio della termodinamica__.
 ###### $\neg {KP} \Rightarrow \neg {C}$
 Supponiamo esista una macchina che viola $KP$, convertendo completamente il calore $Q_A$ assorbito da una sorgente calda in lavoro $W=Q_A$.
 
-Accoppiamo questa macchina $\cancel KP$ a una macchina frigorifera che usa tutto il lavoro fornito per trasferire calore da una sorgente $T_L$ alla sorgente $T_H$.
+Accoppiamo questa macchina $\cancel {KP}$ a una macchina frigorifera che usa tutto il lavoro fornito per trasferire calore da una sorgente $T_L$ alla sorgente $T_H$.
 Allora inseriamo un nuovo processo frigorifero che sfrutta il lavoro della macchina termica per portare il calore $Q_1$ da una sorgente fredda ad una calda $Q_2$
 
 - $Q_A = W$ perché non viene ceduto alcun calore
@@ -943,17 +943,143 @@ ad una temperatura $T_2> T_H$ quindi cedendo calore ed ottenendo nuovamente $\ca
 <img alt="Negazione Clausius implica Negazione di kelvin planck" src="../imgs/termodinamica-14_nCmeansnKP.png">
 
 ---
-### Rev e Irr
-
----
 ### Teorema di carnot
+Consideriamo due macchine generiche che lavorano tra due sorgenti di calore con
+
+$$T_2 > T_1$$
+
+Indichiamo le due macchine con i simboli $R$ e $X$: la prima è una macchina reversibile, mentre la seconda è una macchina generica.
+
+<img alt="Negazione Clausius implica Negazione di kelvin planck" src="../imgs/termodinamica-15_TeoremaCarnotIpotesi.png">
+
+I rendimenti delle due macchine sono rispettivamente:
+
+$$\eta_R = \frac W {Q_2'} \quad  \eta_X = \frac W {Q_2}$$
+
+Per assurdo assumiamo che il rendimento della macchina generica sia maggiore di quella reversibile 
+
+$$\eta_X > \eta_R$$
+
+Sapendo che $R$ è reversibile, possiamo invertire il ciclo e renderla una macchina frigorifera che prende il lavoro fornito da $X$ per scambiare calore tra le sorgenti.
+
+Ora consideriamo la macchina $M$ che raggruppa insieme $X$ e $\overline R$. 
+
+<img alt="Negazione Clausius implica Negazione di kelvin planck" src="../imgs/termodinamica-16_TeoremaCarnotReverse.png">
+
+Sapendo che per ipotesi
+
+$$\eta_X > \eta_R$$
+
+$$\frac {\cancel W} {Q_2} > \frac {\cancel W} {Q_2'} \Rightarrow Q_2 < Q_2' $$
+
+Questo significa che il calore nella macchina $M$ dalla sorgente più calda è negativo, il che significa che il calore fluisce dalla sorgente fredda a quella calda: essendo l'__unico__ effetto della macchina $M$ questa viola l'enunciato di Clausius, assurdo, quindi otteniamo che 
+
+$$\eta_X \le \eta_R$$
+
+Se assumiamo ora $X$ reversibile ed effettuando gli stessi passaggi otteniamo analogamente al caso precedente:
+
+$$\eta_{X}^{rev} \ge \eta_R$$
+
+resa compatibile con il caso precedente otteniamo quindi:
+
+$$\eta_{X}^{rev} = \eta_R$$
+
+> - tutte le macchine reversibili che lavorano tra le stesse sorgenti alle temperature $T_1$ e $T_2$ hanno rendimento uguale;
+> - qualsiasi altra macchina che lavori tra le stesse temperature non può avere rendimento maggiore;
+> - il risultato è indipendente dal particolare sistema che compie il ciclo
+
+- l'ultimo corollario afferma che tutte le macchine termiche che lavorano tra due sorgenti hanno lo stesso rendimento; quindi possiamo considerare il rendimento del ciclo di Carnot, valido per ogni macchina reversibile che lavora tra $T_1$ e $T_2$
+
+$$\eta = 1 - \frac {T_1}{T_2}$$
+
+- un'altra formulazione detta __diseguaglianza di Clausius__ è (utile per l'entropia)
+
+
+$$1 - \frac {|Q_1|}{Q_2} \le 1 - \frac {T_1}{T_2}$$ 
+$$Q_1 < 0 \Rightarrow Q_1 = -|Q_1|$$ 
+$$\frac {Q_1}{T_1} + \frac {Q_2}{T_2} \le 0$$ 
+
+- questo rendimento esprime un limite massimo e fa notare che più distanti sono le temperature più alto è il rendimento
+
+- nel momento in cui la macchina è reversibile $$-\frac {|Q_1|}{T_1} + \frac {|Q_2|}{T_2} = 0 \Rightarrow \frac {|Q_1|}{T_1} = \frac {|Q_2|}{T_2}  $$ 
+questo fornisce un legame diretto tra i calori scambiati e le temperature delle sorgenti: 
 
 ---
 ### Teorema di Clausius
+Partendo dalla formulazione del teorema di Carnot
+
+$$\frac {Q_1}{T_1} + \frac {Q_2}{T_2} \le 0$$ 
+
+Consideriamo una trasformazione ciclica generica.
+
+<img src="../imgs/empty.png">
+
+E andiamo ad approssimare il ciclo con trasformazioni isoterme e adiabatiche.
+
+<img src="../imgs/empty.png">
+
+analizzando un pezzettino di ciclo andiamo a completare a coppie una isoterma e una adiabatica per formare tanti piccoli cicli di Carnot.
+
+Sappiamo che per ogni ciclo vale:
+
+<img src="../imgs/empty.png">
+
+considerando che segmenti interni delle adiabatiche hanno calore 0 e le isoterme vengono percorse nei due sensi si possono andare ad eliminare tutti i segmenti percorsi due volte andando a lasciare solo le trasformazioni esterne
+
+<img src="../imgs/empty.png">
+
+
+andando a fare trasformazioni infinitesime andiamo ad ottenere:
+
+<img src="../imgs/empty.png">
+
+
 
 ---
 ### Entropia
+Il teorema di Clausius afferma che
+
+$$\oint \frac {dQ}T \le 0 \quad (= 0 \; se\; rev)$$
+
+Scegliamo due punti arbitrari in un ciclo reversibile si ottiene
+
+$$\int_A^B {\frac {dQ}T}_{(I)} + \int_B^A {\frac {dQ}T}_{(II)} = 0$$
+
+Essendo reversibile posso considerare il percorso ($II$) inverso:
+
+$$\int_A^B {\frac {dQ}T}_{(I)} - \int_A^B {\frac {dQ}T}_{(II)} = 0$$
+
+ottenendo che 
+
+$$\int_A^B {\frac {dQ}T}_{(I)} = \int_A^B {\frac {dQ}T}_{(II)}$$
+
+È importante notare l'arbitrarietà dei percorsi, questo ci permette di definire una funzione di stato detta __entropia__
+
+$$\int_A^B {\frac {dQ}T}_{rev} = S(B) - S(A)$$
+
+Questa funzione di stato mi permette di calcolare il differenziale con la differenza dell'entropia finale con l'iniziale.
+
+$$\Delta S_{A\rightarrow B} = \int_A^B \frac {dQ}T_{rev}$$
+
+La differenza di entropia di una trasformazione qualsiasi può essere calcolata tramite l'integrale dQ su T da uno stato A a B con una trasformazione reversibile qualsiasi.
+
+Quindi posso scegliere la trasformazione reveresibile più comoda dal punto iniziale a finale.
+
+$$dS = \bigg(\frac{dQ}T\bigg)_{rev}$$
+
+##### Osservazioni
+1. l'entropia è una quantità additiva ($S_1 \cup S_2 \Rightarrow S_3 = S_1 + S_2$)
+2. l'entropia è una grandezza estensiva, in quanto additiva e dipendente dal calore, che a sua volta dipende dalla massa
+3. per il calcolo conviene scegliere la trasformazione reversibile più conveniente
+<img alt="esempio di calcolo di Delta S" src="../imgs/termodinamica-17_EsempioCalcoloEntropia.png">
+
+###### todo
+- calcola entropia per le varie trasformzazioni gas ideali
+
+
 ###### Interpretazione probabilistica dell'entropia
+- todo
+
 
 ---
 

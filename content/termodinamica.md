@@ -859,11 +859,88 @@ solo traslazione → $f = 3$ → $\langle E \rangle = \frac{3}{2}k_B T$
 3 gradi traslazionali + 2 gradi rotazionali → $f = 5$ → $\langle E \rangle = \frac{5}{2}k_B T$
 
 
+### Trasformazioni Reversibili e Irreversibili
+Una trasformazione è detta __reversibile__ se è possibile riportare allo stato iniziale sia il sistema che l'ambiente esterno.
 
+###### Esempi irreversibili
+1. __presenza attriti__: il calore che il gas ha assorbito viene speso per effettuare il lavoro (espansione del gas), ma anche per gli attriti (ad esempio attrito del pistone con il cilindro) quindi se voglio riportare il gas allo stato iniziale dovrò spendere un lavoro per la compressione uguale al calore assorbito meno il calore perso nell'attrito
+
+    - espansione $$Q_{gas} = W_{espansione} + W_{attriti}$$ con $$W_{attriti} = Q_{ambiente}$$
+    - compressione $$W_{compiuto} = Q_{gas} - Q_{ambiente} < Q_{gas}$$
+si vede quindi che il calore ceduto all'ambiente a causa dell'attrito non è recuperabile durante la compressione.
+
+2. __espansione libera__: in questo caso non c'è ne lavoro, ne calore scambiati, ma per riportare il sistema allo stato originale devo operare una trasformazione inversa, cioè una compressione isoterma in cui il lavoro sarà uguale al calore e sarà diverso da zero
+
+3. due corpi a contatto in un sistema isolato a temperature differenti a contatto termico dopo un certo tempo saranno in equilibrio termico, per poi riportarli alla situazione iniziale dovrò introdurre almeno una macchina frigorifera nel sistema
 
 ---
 ## Secondo principio della termodinamica
+Il primo principio della termodinamica afferma che:
+
+$$ \Delta U = Q - W$$
+
+In un ciclo termodinamico, $\Delta U = 0$, tutto il calore si trasforma in lavoro:
+
+$$W = Q$$
+
+Tuttavia, in una macchina termica che scambia calore con due sorgenti ($T_2 > T_1$), il calore ceduto alla sorgente $T_1$ $Q_C <0$ non è mai nullo, pertanto:
+
+$$W= Q_A + Q_C \Rightarrow W < Q_A$$
+
+
+Se invece consideriamo una trasformazione non ciclica, è possibile convertire tutto il calore assorbito in lavoro, ma questo non è mai l'unico effetto: cambia lo stato del sistema. Per esempio, nell'__espansione isoterma__ di un gas ideale:
+
+$$Q = W$$
+
+ma le coordinate termodinamiche sono cambiate:
+
+$$(V_i,\;p_i) \quad \rightarrow \quad (V_f > V_i,\;p_f < p_i)$$
+
+e per riportare il gas allo stato iniziale occorre cedere calore.
+
+Inoltre, il calore non fluisce mai spontaneamente da un corpo freddo a un corpo più caldo (può avvenire con l'ausilio di una macchina frigorifera).
+
+Queste due evidenze sperimentali:
+1. _impossibilità di trasformare tutto il calore assorbito in lavoro_
+2. _impossibilità di far fluire calora da un corpo freddo a uno caldo spontaneamente_
+hanno portato alla formulazione del __secondo principio della termodinamica__.
+
 ### Equivalenza enunciati
+###### Enunciato di Kelvin-Planck
+> È impossibile realizzare un processo che abbia come __unico__ risultato la trasformazione in lavoro del calore fornito da una sorgente a temperatura uniforme
+
+###### Enunciato di Clausius
+> È impossibile realizzare un processo che abbia come __unico__ risultato il trasferimento di calore da un corpo a un altro ad una temperatura maggiore.
+
+##### Equivalenza Enunciati
+###### $\neg {KP} \Rightarrow \neg {C}$
+Supponiamo esista una macchina che viola $KP$, convertendo completamente il calore $Q_A$ assorbito da una sorgente calda in lavoro $W=Q_A$.
+
+Accoppiamo questa macchina $\cancel KP$ a una macchina frigorifera che usa tutto il lavoro fornito per trasferire calore da una sorgente $T_L$ alla sorgente $T_H$.
+Allora inseriamo un nuovo processo frigorifero che sfrutta il lavoro della macchina termica per portare il calore $Q_1$ da una sorgente fredda ad una calda $Q_2$
+
+- $Q_A = W$ perché non viene ceduto alcun calore
+- $Q_2 = W + Q_1 = Q_A + Q_1$
+- $Q_2 > Q_A$
+
+Quindi se raggruppiamo questi due processi otteniamo una macchina che fa fluire calore dalla sorgente fredda a quella calda come unico effetto, non produce lavoro (il lavoro è interno al nuovo sistema) e altro non è che la negazione di __Clausius__.
+
+In alternativa si potrebbe anche utilizzare il lavoro generato dalla macchina $\cancel {KP}$ per eseguire una compressione isoterma
+
+$$W_{\cancel {KP}} = nRT_2 \ln \frac {V_f}{V_i}$$
+
+vogliamo che $T_2 > T_H$
+
+$$\frac {W_{\cancel {KP}}}{nR\ln V_f/ V_i} > T_H$$
+
+ad una temperatura $T_2> T_H$ quindi cedendo calore ed ottenendo nuovamente $\cancel C$. 
+
+<img alt="Negazione Clausius implica Negazione di kelvin planck" src="../imgs/termodinamica-13_nKPmeansnC.png">
+
+
+###### $\neg {C} \Rightarrow \neg {KP}$
+
+<img alt="Negazione Clausius implica Negazione di kelvin planck" src="../imgs/termodinamica-14_nCmeansnKP.png">
 
 ---
 ### Rev e Irr

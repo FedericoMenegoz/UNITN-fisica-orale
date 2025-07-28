@@ -12,7 +12,7 @@ $$
 N_A = 6.022\cdot 10^{23}
 $$
 
-Di tale sistema si vgliono descrivere le __trasformazioni__ che può subire e gli scambi energetici ch ne derivano con l'ambiente circostante.
+Di tale sistema si vogliono descrivere le __trasformazioni__ che può subire e gli scambi energetici ch ne derivano con l'ambiente circostante.
 
 <img alt="un sitema termodinamico circondato dall'ambiente" src="../imgs/termodinamica-00_Universo.png">
 
@@ -159,6 +159,15 @@ $$
 
 Una mole di sostanza è la quantità di materia di suddetta sostanza contenente $N_A = 6.022 \cdot 10^{23}$ entità elementari (atomi o molecole). $N_A$ è il __numero di Avogadro__ che corrisponde al numero di entità fondamentali di 12 grammi di isotopo $^{12}C$  del carbonio.
 
+La relazione tra calore specifico molare e quello dipendente dalla massa è:
+
+$$n c^{(n)} = mc^{(m)}$$
+
+$$c^{(n)} = \frac mnc^{(m)}$$
+
+$$c^{(n)} = \frac {n N_Am_A}nc^{(m)}$$
+
+$$c^{(n)} =  N_Am_Ac^{(m)}$$
 
 ---
 ###### Cambiamenti di fase
@@ -486,7 +495,7 @@ $$p_0\alpha V_m = R  = 8.314 \frac J{mol\cdot K}$$
 > con $N$ numero di particelle e $n= \frac N {N_A}$
 >
 > - $k_B = 1.38 \cdot 10^{-23}$ è la __costante di Boltzman__ con unità di misura $\big[\frac J K\big]$
-> - $R = 8.314 \cdot 10^{-23}$ è la __costante di Boltzman__ con unità di misura $\big[\frac J {K\cdot mol}\big]$
+> - $R = 8.314 \cdot 10^{-23}$ è la __costante dei gas ideali__ con unità di misura $\big[\frac J {K\cdot mol}\big]$
 
 Questo è un comportamento limite dei gas ideali: quanto più un gas è caldo e rarefatto, tanto più il suo comportamento si avvicina a quello di un gas ideale, praticamente identico per tutti i gas in tali condizioni.
 
@@ -530,7 +539,114 @@ Risultato vero solo per un gas ideale.
 
 ---
 ### Trasformazioni notevoli
+###### Trasformazioni isocore
+
+Il volume rimane costante quindi il lavoro in questa trasformazione è nullo:
+
+$$V = cost \quad \Delta V = 0\quad W = 0$$
+
+
+$$dU = \delta Q - \delta W = \delta Q - 0$$
+
+Ricordando che il calore si calcola con il [calore specifico](#calore-specifico-molare):
+
+$$dQ = mc^{(m)}\Delta T\quad \mathtt{calore\;specifico}$$ 
+
+$$dQ = nc^{(n)}\Delta T\quad \mathtt{calore\;specifico\;molare}$$ 
+
+Quindi posso il calore che scambio sarà uguale:
+
+$$dQ = nc_VdT$$
+
+Essendo appunto il lavoro nullo si ottiene che la variazione di energia interna sarà uguale al calore scambiato:
+
+$$dU = nc_VdT$$
+
+>Questo è un risultato importante perché $U = U(T)$ è una funzione di stato e dipende solo dalla temperatura, allora la relazione che abbiamo appena trovato è universalmente valida per calcolare l'energia interna
+>
+>$$\Delta U = nc_V\Delta T$$
+>
+
+Dalla [teoria cinetica](#teoria-cinetica-dei-gas):
+- gas monoatomici $\frac 32 R$
+- gas biatomici $\frac 52 R$
+
+---
+###### Trasformazioni isobare
+
+In una trasformazione isobara la pressione è costante:
+
+$$p=cost \quad \Delta p = 0$$
+
+Ricordando l'equazione di stato dei gas si ottiene:
+
+$$
+p = \frac {nRT}{V} = cost \quad 
+$$
+
+Dal primo principio della termodinamica:
+
+$$dU = dQ - dW$$
+
+Il __lavoro__ sarà l'area sottesa della trasformazione (un rettangolo essendo la pressione costante)
+
+$$dW = pdV = \frac{nRT}{V}dV$$
+
+Essendo anche $pdV = nRdT$ perché a piccole variazioni di volume si hanno piccole variazioni di temperatura (tutto il resto è costante) si ottiene:
+
+$$\frac{nRT}{V}dV = nRdT$$
+
+Il calore in questo caso si calcolerà con il calore specifico molare a pressione costante:
+
+$$dQ = nc_PdT$$
+
+La variazione di energia interna si può utilizzare il risultato dalle isocore:
+
+$$dU = nc_VdT$$
+
+Mettendo insieme la prima legge della termodinamica 
+
+$$dU = \delta Q - \delta W$$ 
+
+si ottiene la relazione di Mayer:
+
+###### Relazione di Mayer
+
+$$\cancel nc_V\cancel{dT} = \cancel nc_p\cancel{dT} - \cancel nR\cancel{dT} \quad \Rightarrow \quad R = c_p - c_V$$
+Questa relazione, nota come relazione di Mayer, esprime la differenza tra il calore specifico a pressione costante e quello a volume costante per un gas ideale.
+
+È utile anche introdurre il parametro adimensionale:
+
+$$\gamma = \frac {c_p}{c_v} > 1$$
+
+detto rapporto dei calori specifici, fondamentale nello studio dei gas ideali, in particolare nei processi adiabatici.
+
+---
+###### Trasformazioni isoterme
+Nelle trasformazioni isoterme abbiamo:
+
+$$T = cost \quad \Delta T = 0$$
+
+Per le trasformazioni isoterme non abbiamo modo di calcolare il calore scambiato, ma sappiamo, grazie all'equazione di stato dei gas ideali:
+
+$$pV = cost = nRT\quad \Rightarrow \quad p = \frac {nRT}V = \frac {cost}V$$
+
+Quinid il lavoro:
+
+$$W = \int_i^fpdV = \int_i^f\frac {nRT}V dv = nRT\bigg[\ln \bigg(\frac {V_f}{V_i}\bigg)\bigg]$$
+
+Essendo __isoterma__ ha $\Delta U = 0 = Q - W$:
+
+$$\Delta U = 0 \Rightarrow Q = W = nRT \ln \bigg(\frac {V_f}{V_i}\bigg)$$
+
+Non ha senso di parlare di calore specifico a temperatura costante perché sarà sempre uguale a zero essendo $dt = 0$
+
+---
 ###### Trasformazioni adiabatiche
+Il calore scambiato in un adiabatica è sempre nullo:
+
+$$dQ = 0$$
+
 Il gas è all'interno di un contenitore a pareti adiabatiche quindi può scambiare solo lavoro per esempio tramite una parete mobile, consideriamo una trasformazione da uno stato A a uno stato B:
 
 $$
@@ -593,65 +709,9 @@ Se rappresentiamo la trasformazione nel piano di Clapeyron utilizzando $pV^\gamm
 <img alt="Confronto su piano di Clapeyron di una trasformazione adiabatica e due isoterme" src="../imgs/termodinamica-06_AdiabaticaIsoterme.png">
 
 ---
-###### Trasformazioni isocore
+### Trasformazioni Generiche
 
-Il volume rimane costante quindi il lavoro in questa trasformazione è nullo:
-
-$$dU = dQ = nc_VdT$$
-
-Poiché per un gas ideale l'energia interna $U$ (funzione di stato) dipende solo dalla temperatura, l'equazione 
-
-$$dU = nc_VdT$$
-
-è universale e si può utlizzare per qualsiasi trasformazione, se volessimo includere anche il lavoro si ottiene:
-
-$$dQ = nc_VdT + pdV$$
-
-Ricordando dalla teoria cinetica i valori per i gas ideali:
-- gas monoatomici $c_V=\frac 32 R$
-- gas biatomici $c_V=\frac 52 R$
-
----
-###### Trasformazioni isobare
-
-In una trasformazione isobara la pressione è costante:
-
-$$
-p = \frac {nRT}{V} = cost \quad 
-$$
-
-Dal primo principio della termodinamica:
-
-$$dU = dQ - dW$$
-
-Sapendo che
-
-$$dW = pdV = \frac{nRT}{V}dV = n R dT$$
-
-Mettendo insieme la prima legge della termodinamica 
-
-$$dU = \delta Q - \delta W$$ 
-
-si ottiene la relazione di Mayer:
-
-###### Relazione di Mayer
-
-$$\cancel nc_V\cancel{dT} = \cancel nc_p\cancel{dT} - \cancel nR\cancel{dT} \quad \Rightarrow \quad R = c_p - c_V$$
-
----
-###### Trasformazioni isoterme
-
-Per le trasformazioni isoterme non abbiamo modo di calcolare il calore scambiato, ma sappiamo, grazie all'equazione di stato dei gas ideali:
-
-$$pV = nRT \Rightarrow p = \frac {nRT}V = \frac {cost}V$$
-
-Quinid il lavoro:
-
-$$W = \int_i^fpdV = \int_i^f\frac {nRT}V dv = nRT\bigg[\ln \bigg(\frac {V_f}{V_i}\bigg)\bigg]$$
-
-Essendo __isoterma__:
-
-$$\Delta U = 0 \Rightarrow Q = W = nRT \ln \bigg(\frac {V_f}{V_i}\bigg)$$
+$$d Q = nc_VdT + pdV$$
 
 ---
 ### Trasformazioni cicliche

@@ -351,7 +351,7 @@ Il risultato osservato da Joule e confermato da altri esperimenti, purché il si
 - se invece si compie lavoro dall'esterno al sistema il lavoro $W$ è assunto negativo e l'energia $U$ aumenta
 
 
->Il calore $Q$ scambiato, senza lavoro esterno, per far variare la temperatura di $\Delta T$. di una massa d'acqua è uguale al lavoro $W_ad$ chhe deve essere speso, in condizioni adiabiatiche, per ottenere la stessa variazione di temperatura
+>Il calore $Q$ scambiato, senza lavoro esterno, per far variare la temperatura di $\Delta T$. di una massa d'acqua è uguale al lavoro $W_{ad}$ che deve essere speso, in condizioni adiabiatiche, per ottenere la stessa variazione di temperatura
 
 ---
 ### Primo principio della termodinamica. Energia interna

@@ -5,6 +5,8 @@ counter: 0
 # Urti
 Si parla di __urto__ quando due corpi interagiscono violentemente in un intervallo di tempo trascurabile rispetto ai tempi di osservazione del loro moto prima del contatto.
 
+In particolare si parla di urto quando due masse $m_1$ e $m_2$ interagiscono dinamicamente tra loro, modificando la loro quantità di moto.
+
 ---
 ###### Forze impulsive
 Le forze in gioco durante l'interazione dei due corpi sono molto intense e agiscono per un tempo breve, queste sono chiamate __forze impulsive__. 
